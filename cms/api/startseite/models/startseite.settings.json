@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "startseites",
+  "info": {
+    "name": "Startseite"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string"
+    }
+  }
+}
