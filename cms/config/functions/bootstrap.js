@@ -1,5 +1,7 @@
 'use strict';
 
+const pluralize = require('pluralize')
+
 /**
  * An asynchronous bootstrap function that runs before
  * your application gets started.
@@ -10,4 +12,6 @@
  * See more details here: https://strapi.io/documentation/developer-docs/latest/setup-deployment-guides/configurations.html#bootstrap
  */
 
-module.exports = () => {};
+module.exports = () => {
+    pluralize.addPluralRule('Seite', 'Seiten');
+};

@@ -1,0 +1,20 @@
+{
+  "kind": "collectionType",
+  "collectionName": "Seiten",
+  "info": {
+    "name": "Seite",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Titel": {
+      "type": "string",
+      "pluginOptions": {}
+    }
+  }
+}
