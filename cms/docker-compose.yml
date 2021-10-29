@@ -1,0 +1,9 @@
+version: "3"
+
+services:
+  eagles-cms:
+    build: .
+    ports:
+    - "3333:1337"
+    volumes:
+    - .:/srv/app
