@@ -1,4 +1,8 @@
-FROM strapi/base:14-alpine
+FROM alpine:3
+
+RUN apk add --update --no-cache\
+    nodejs\
+    yarn
 
 WORKDIR /srv/app
 

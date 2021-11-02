@@ -6,4 +6,7 @@ services:
     ports:
     - "3333:1337"
     volumes:
-    - .:/srv/app
+    - cms:/srv/app
+
+volumes:
+  cms:
