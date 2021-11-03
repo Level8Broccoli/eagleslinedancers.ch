@@ -6,7 +6,5 @@ services:
     ports:
     - "3333:1337"
     volumes:
-    - cms:/srv/app
+    - /data/eagleslinedancers:/srv/app/.temp
 
-volumes:
-  cms:
