@@ -6,7 +6,7 @@ if [ -d eagleslinedancers.ch ]; then
   rm -R eagleslinedancers.ch;
 fi
 
-GIT_SSH_COMMAND='ssh -i /tmp/.ssh/id_rsa' git clone git@github.com:Level8Broccoli/eagleslinedancers.ch.git
+GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git clone git@github.com:Level8Broccoli/eagleslinedancers.ch.git
 
 cd eagleslinedancers.ch
 
@@ -19,5 +19,5 @@ curl \
 
 if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]; then
   git commit -am 'fetch new seiten data';
-  GIT_SSH_COMMAND='ssh -i /tmp/.ssh/id_rsa' git push;
+  GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git push;
 fi
