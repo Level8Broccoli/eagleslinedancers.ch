@@ -11,4 +11,4 @@ curl \
   -H "Content-Type: application/json" \
   -o /tmp/eagleslinedancers.ch/data-seiten.json \
   http://localhost:1337/seiten
-git diff --quiet && git diff --staged --quiet || git commit -am 'fetch new seiten data' && git push
+git diff --quiet && git diff --staged --quiet || git commit -am 'fetch new seiten data' && GIT_SSH_COMMAND='ssh -i /tmp/.ssh/id_rsa' git push
