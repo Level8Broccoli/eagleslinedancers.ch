@@ -15,6 +15,9 @@
     "Titel": {
       "type": "string",
       "pluginOptions": {}
+    },
+    "slug": {
+      "type": "string"
     }
   }
 }
