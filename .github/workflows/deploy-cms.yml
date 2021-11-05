@@ -11,7 +11,10 @@ jobs:
         uses: actions/checkout@v2
       - name: Create Key
         shell: bash
-        run: echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > id_rsa
+        run: |
+          ls -la
+          echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > id_rsa
+          ls -la
       - name: Docker Deploy
         uses: wshihadeh/docker-deployment-action@v2
         with:
