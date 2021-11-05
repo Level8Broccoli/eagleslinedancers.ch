@@ -2,8 +2,9 @@
 
 cd /tmp
 
-if [ -d eagleslinedancers.ch ]; then
-  rm -R eagleslinedancers.ch;
+if [ -d eagleslinedancers.ch ]
+then
+  rm -R eagleslinedancers.ch
 fi
 
 GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git clone git@github.com:Level8Broccoli/eagleslinedancers.ch.git
@@ -17,7 +18,10 @@ curl \
   http://localhost:1337/seiten
 
 
-if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]; then
-  git commit -am 'fetch new seiten data';
-  GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git push;
+if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
+then
+  git config --global user.name "GitHub Action"
+  git config --global user.email "7040739+Level8Broccoli@users.noreply.github.com"
+  git commit -am 'fetch new seiten data'
+  GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git push
 fi
