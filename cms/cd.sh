@@ -1,5 +1,7 @@
 #!/usr/bin/env sh
 
+rm -R /tmp/eagleslinedancers.ch
+
 if [ ! -d /tmp/eagleslinedancers.ch ]; then
   mkdir -p /tmp/eagleslinedancers.ch;
 fi
@@ -12,3 +14,5 @@ curl \
   -o /tmp/eagleslinedancers.ch/data-seiten.json \
   http://localhost:1337/seiten
 git diff --quiet && git diff --staged --quiet || git commit -am 'fetch new seiten data' && git push
+
+rm -R /tmp/eagleslinedancers.ch
