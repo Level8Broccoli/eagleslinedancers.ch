@@ -1,10 +1,10 @@
 #!/usr/bin/env sh
 
-rm -R /tmp/eagleslinedancers.ch
 
-if [ ! -d /tmp/eagleslinedancers.ch ]; then
-  mkdir -p /tmp/eagleslinedancers.ch;
+if [ -d /tmp/eagleslinedancers.ch ]; then
+  rm -R /tmp/eagleslinedancers.ch
 fi
+mkdir -p /tmp/eagleslinedancers.ch;
 
 GIT_SSH_COMMAND='ssh -i /tmp/.ssh/id_rsa' git clone git@github.com:Level8Broccoli/eagleslinedancers.ch.git /tmp/eagleslinedancers.ch
 echo "after clone"
