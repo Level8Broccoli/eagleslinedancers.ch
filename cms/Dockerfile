@@ -17,10 +17,7 @@ RUN yarn install
 
 COPY . .
 
-RUN find . -maxdepth 1
-
 RUN chmod +x cd.sh
-
 RUN mkdir -p /tmp/.ssh
 RUN mv id_rsa /tmp/.ssh/id_rsa
 
