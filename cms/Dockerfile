@@ -20,7 +20,7 @@ COPY . .
 RUN chmod +x cd.sh
 
 RUN mkdir -p /tmp/.ssh
-RUN echo $DEPLOY_PRIVATE_KEY > /tmp/.ssh/id_rsa
+RUN mv id_rsa /tmp/.ssh/id_rsa
 
 ENV NODE_ENV production
 
