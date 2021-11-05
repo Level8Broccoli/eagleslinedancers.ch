@@ -12,9 +12,7 @@ jobs:
       - name: Create Key
         shell: bash
         run: |
-          ls -la
-          echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > id_rsa
-          ls -la
+          echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ./cms/id_rsa
       - name: Docker Deploy
         uses: wshihadeh/docker-deployment-action@v2
         with:
