@@ -1,8 +1,12 @@
 FROM alpine:3
 
 RUN apk add --update --no-cache\
+    git\
+    npm\
     nodejs\
-    yarn
+    yarn\
+    curl\
+    openssh
 
 WORKDIR /srv/app
 
@@ -12,6 +16,8 @@ COPY ./yarn.lock ./
 RUN yarn install
 
 COPY . .
+
+RUN chmod +x cd.sh
 
 ENV NODE_ENV production
 

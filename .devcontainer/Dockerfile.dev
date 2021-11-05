@@ -1,7 +1,9 @@
 FROM alpine:3
 
 RUN apk add --update --no-cache\
-   git\
-   nodejs\
-   npm\
-   yarn
+    git\
+    npm\
+    nodejs\
+    yarn\
+    curl\
+    openssh
