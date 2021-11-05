@@ -14,6 +14,7 @@ jobs:
         run: |
           printf '%s %s\n' \
             echo "${{ secrets.DEPLOY_PRIVATE_KEY }}" > ./cms/id_rsa
+          chmod 600 ./cms/id_rsa
       - name: Docker Deploy
         uses: wshihadeh/docker-deployment-action@v2
         with:
