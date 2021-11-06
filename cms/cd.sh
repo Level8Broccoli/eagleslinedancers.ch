@@ -30,6 +30,6 @@ then
   git config --global user.name "GitHub Action"
   git config --global user.email "7040739+Level8Broccoli@users.noreply.github.com"
   git add .
-  git commit -m 'fetch new seiten data'
+  git commit -m 'sync data from cms'
   GIT_SSH_COMMAND="${SSH_COMMAND}" git push
 fi
