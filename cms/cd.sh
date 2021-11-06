@@ -1,21 +1,31 @@
 #!/usr/bin/env sh
 
-cd /tmp
+TEMP_FOLDER=/tmp
+GIT_NAME=eagleslinedancers.ch
+SSH_COMMAND=ssh -o StrictHostKeyChecking=no -i $TEMP_FOLDER/.ssh/id_rsa
+TYPES=(
+  seiten
+)
 
-if [ -d eagleslinedancers.ch ]
+cd $TEMP_FOLDER
+
+if [ -d $GIT_NAME ]
 then
-  rm -R eagleslinedancers.ch
+  rm -R $GIT_NAME
 fi
 
-GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git clone git@github.com:Level8Broccoli/eagleslinedancers.ch.git
+GIT_SSH_COMMAND='$SSH_COMMAND' git clone git@github.com:Level8Broccoli/$GIT_NAME.git
 
-cd eagleslinedancers.ch
+cd $GIT_NAME
 
-curl \
-  -X GET \
-  -H "Content-Type: application/json" \
-  -o data-seiten.json \
-  http://localhost:1337/seiten
+for TYPE in "${TYPES[@]}"
+do
+  curl \
+    -X GET \
+    -H "Content-Type: application/json" \
+    -o data-$TYPE.json \
+    http://localhost:1337/$TYPE
+done
 
 
 if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
@@ -24,5 +34,5 @@ then
   git config --global user.email "7040739+Level8Broccoli@users.noreply.github.com"
   git add .
   git commit -m 'fetch new seiten data'
-  GIT_SSH_COMMAND='ssh -o StrictHostKeyChecking=no -i /tmp/.ssh/id_rsa' git push
+  GIT_SSH_COMMAND='$SSH_COMMAND' git push
 fi
