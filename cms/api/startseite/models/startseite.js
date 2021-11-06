@@ -5,4 +5,13 @@
  * to customize this model
  */
 
-module.exports = {};
+module.exports = {
+    lifecycles: {
+        async afterCreate() {
+            strapi.config.functions['cd']();
+        },
+        async afterUpdate() {
+            strapi.config.functions['cd']();
+        }
+    }
+};
