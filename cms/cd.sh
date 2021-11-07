@@ -12,8 +12,6 @@ then
 fi
 
 git clone git@github.com:Level8Broccoli/${GIT_NAME}.git
-pwd
-find .
 
 cd $GIT_NAME
 
