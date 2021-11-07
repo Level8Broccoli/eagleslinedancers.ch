@@ -12,6 +12,8 @@ then
 fi
 
 git clone git@github.com:Level8Broccoli/${GIT_NAME}.git
+pwd
+find .
 
 cd $GIT_NAME
 
@@ -20,7 +22,7 @@ do
   curl \
     -X GET \
     -H "Content-Type: application/json" \
-    -o data-$TYPE.json \
+    -o ./ssg/_data/$TYPE.json \
     http://localhost:1337/$TYPE
 done
 
