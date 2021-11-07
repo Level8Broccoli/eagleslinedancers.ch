@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_text_formattierter_texts",
+  "info": {
+    "name": "Formattierter Text",
+    "icon": "font"
+  },
+  "options": {},
+  "attributes": {
+    "FormattierterText": {
+      "type": "richtext"
+    }
+  }
+}

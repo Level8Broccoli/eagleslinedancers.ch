@@ -528,6 +528,32 @@
           "slug": {
             "type": "string"
           },
+          "Inhalt": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -541,6 +567,32 @@
           },
           "slug": {
             "type": "string"
+          },
+          "Inhalt": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
           },
           "published_at": {
             "type": "string",

@@ -320,6 +320,32 @@
           },
           "Titel": {
             "type": "string"
+          },
+          "Inhalt": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
           }
         }
       },
@@ -327,6 +353,32 @@
         "properties": {
           "Titel": {
             "type": "string"
+          },
+          "Inhalt": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                }
+              ]
+            }
           },
           "created_by": {
             "type": "string"

@@ -18,6 +18,12 @@
     },
     "slug": {
       "type": "string"
+    },
+    "Inhalt": {
+      "type": "dynamiczone",
+      "components": [
+        "text.formattierter-text"
+      ]
     }
   }
 }
