@@ -4,3 +4,8 @@ eleventyComputed:
     title: "{{startseite.Titel}}"
 ---
 {{ startseite.Titel }}
+{% for item in startseite.Inhalt %}
+    {% if item.__component == "text.formattierter-text" %}
+        <p>{{ item.FormattierterText }}</p>
+    {% endif %}
+{% endfor %}
