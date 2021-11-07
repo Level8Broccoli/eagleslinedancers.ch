@@ -1,0 +1,8 @@
+{
+  "name": "ssg",
+  "private": true,
+  "version": "1.0.0",
+  "devDependencies": {
+    "@11ty/eleventy": "^1.0.0-beta.4"
+  }
+}
