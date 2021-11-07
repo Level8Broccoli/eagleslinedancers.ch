@@ -2,6 +2,10 @@
   "name": "ssg",
   "private": true,
   "version": "1.0.0",
+  "scripts": {
+    "develop": "eleventy --serve",
+    "build": "eleventy"
+  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.0-beta.4"
   }
