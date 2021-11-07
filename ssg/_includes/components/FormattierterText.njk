@@ -1,0 +1,5 @@
+{% macro FormattierterText(params) %}
+<div class="content">
+    <p>{{ params.content | markdownify | safe }}</p>
+</div>
+{% endmacro %}

@@ -5,8 +5,7 @@ layout: layouts/base.njk
 {{ startseite.Titel }}
 {% for item in startseite.Inhalt %}
     {% if item.__component == "text.formattierter-text" %}
-        <div class="content">
-            <p>{{ item.FormattierterText | markdownify | safe }}</p>
-        </div>
+        {%- from "components/FormattierterText.njk" import FormattierterText -%}
+        {{ FormattierterText({content: item.FormattierterText}) }}
     {% endif %}
 {% endfor %}
