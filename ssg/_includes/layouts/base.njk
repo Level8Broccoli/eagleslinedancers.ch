@@ -9,6 +9,9 @@
         {% include "./partials/icons.njk" %}
     </head>
     <body>
+        <header>
+            {% include "./partials/navbar.njk" %}
+        </header>
         {{ content | safe }}
     </body>
 </html>
