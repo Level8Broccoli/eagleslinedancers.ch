@@ -2,7 +2,7 @@
 
 TEMP_FOLDER="/tmp"
 GIT_NAME="eagleslinedancers.ch"
-TYPES="seiten startseite"
+TYPES="seiten startseite fussnavigation hauptnavigation"
 
 cd $TEMP_FOLDER
 
