@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_navigation_seitens",
+  "info": {
+    "name": "Seiten",
+    "icon": "cubes",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Beschriftung": {
+      "type": "string",
+      "required": true
+    },
+    "Seiten": {
+      "type": "component",
+      "repeatable": true,
+      "component": "navigation.seite"
+    },
+    "Pfad": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
+    }
+  }
+}

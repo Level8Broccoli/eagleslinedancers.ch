@@ -1,0 +1,24 @@
+{
+  "kind": "singleType",
+  "collectionName": "hauptnavigations",
+  "info": {
+    "name": "Hauptnavigation",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Navigationspunkte": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.seite",
+        "navigation.seiten",
+        "navigation.startseite"
+      ]
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "kind": "singleType",
+  "collectionName": "fussnavigations",
+  "info": {
+    "name": "Fussnavigation"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Seiten": {
+      "type": "dynamiczone",
+      "components": [
+        "navigation.seite",
+        "navigation.startseite"
+      ]
+    }
+  }
+}

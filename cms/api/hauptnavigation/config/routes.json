@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/hauptnavigation",
+      "handler": "hauptnavigation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/hauptnavigation",
+      "handler": "hauptnavigation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/hauptnavigation",
+      "handler": "hauptnavigation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

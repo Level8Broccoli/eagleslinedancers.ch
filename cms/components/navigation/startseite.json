@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_navigation_startseites",
+  "info": {
+    "name": "Startseite",
+    "icon": "house-damage"
+  },
+  "options": {},
+  "attributes": {
+    "Beschriftung": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fussnavigation",
+      "handler": "fussnavigation.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fussnavigation",
+      "handler": "fussnavigation.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fussnavigation",
+      "handler": "fussnavigation.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

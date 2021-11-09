@@ -16,14 +16,17 @@
       "type": "string",
       "pluginOptions": {}
     },
-    "slug": {
-      "type": "string"
-    },
     "Inhalt": {
       "type": "dynamiczone",
       "components": [
         "text.formattierter-text"
       ]
+    },
+    "Pfad": {
+      "type": "string",
+      "required": true,
+      "unique": true,
+      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
     }
   }
 }

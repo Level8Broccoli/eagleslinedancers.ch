@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_navigation_seiten",
+  "info": {
+    "name": "Seite",
+    "icon": "cube",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Beschriftung": {
+      "type": "string",
+      "required": true
+    },
+    "Seite": {
+      "model": "seite"
+    }
+  }
+}
