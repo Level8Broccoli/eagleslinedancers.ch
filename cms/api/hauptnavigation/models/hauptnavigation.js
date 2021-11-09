@@ -12,6 +12,9 @@ module.exports = {
         },
         async afterUpdate() {
             strapi.config.functions['cd']();
-        }
-    }
+        },
+        async afterDelete() {
+            strapi.config.functions['cd']();
+        },
+    },
 };
