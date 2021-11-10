@@ -13,22 +13,28 @@ fi
 
 git clone git@github.com:Level8Broccoli/${GIT_NAME}.git
 
-cd $GIT_NAME
-
-for TYPE in $TYPES
-do
-  curl \
-    -X GET \
-    -H "Content-Type: application/json" \
-    -o ./ssg/_data/$TYPE.json \
-    http://localhost:1337/$TYPE
-done
-
-if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
+if [ -d $GIT_NAME ]
 then
-  git config --global user.name "GitHub Action"
-  git config --global user.email "7040739+Level8Broccoli@users.noreply.github.com"
-  git add .
-  git commit -m 'sync data from cms'
-  git push
+  cd $GIT_NAME
+
+  for TYPE in $TYPES
+  do
+    curl \
+      -X GET \
+      -H "Content-Type: application/json" \
+      -o ./ssg/_data/$TYPE.json \
+      http://localhost:1337/$TYPE
+  done
+
+  if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
+  then
+    git config --global user.name "GitHub Action"
+    git config --global user.email "7040739+Level8Broccoli@users.noreply.github.com"
+    git add .
+    git commit -m 'sync data from cms'
+    git push
+  fi
+else
+  ls -la
+  echo "Couldn't sync data"
 fi
