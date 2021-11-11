@@ -7,6 +7,9 @@
         alias: "seite",
     },
     permalink: "{{seite.Permalink | slug}}/",
+    eleventyComputed: {
+        title: "{{seite.Titel}}"
+    }
 }
 ---
 {{seite.Titel}}
