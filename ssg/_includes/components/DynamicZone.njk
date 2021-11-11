@@ -3,6 +3,12 @@
         {% if item.__component == "text.formattierter-text" %}
             {%- from "components/FormattierterText.njk" import FormattierterText -%}
             {{ FormattierterText({content: item.FormattierterText}) }}
+        {% elif item.__component == "text.abschnittstitel" %}
+            <h2 class="title is-4 {% if item.Linie %}ea-title-line{% endif %}">
+                <span>{{ item.Abschnittstitel }}</span>
+            </h2>
+        {% elif item.__component == "interaktion.seitenlink" %}
+            <a class="button is-primary" href="/{{item.Seite.Permalink}}/">{{item.Beschriftung}}</a>
         {% endif %}
     {% endfor %}
 {% endmacro %}
