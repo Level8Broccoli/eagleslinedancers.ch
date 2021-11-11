@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_interaktion_links",
+  "info": {
+    "name": "Link",
+    "icon": "link"
+  },
+  "options": {},
+  "attributes": {
+    "Beschriftung": {
+      "type": "string",
+      "required": true
+    },
+    "Seite": {
+      "model": "seite"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_text_abschnittstitel",
+  "info": {
+    "name": "Abschnittstitel",
+    "icon": "h-square"
+  },
+  "options": {},
+  "attributes": {
+    "Abschnittstitel": {
+      "type": "string",
+      "required": true
+    },
+    "Linie": {
+      "type": "boolean",
+      "default": true,
+      "required": true
+    }
+  }
+}
