@@ -1,13 +1,9 @@
 ---
 layout: layouts/base.njk
 ---
-<div class="frontpage-title">
-    <section class="section">
-        <div class="container">
-            <h2 class="title is-1 has-text-primary">{{ startseite.Titel }}</h2>
-        </section>
-    </div>
-</div>
+
+{%- from "components/FrontpageTitle.njk" import FrontpageTitle -%}
+{{ FrontpageTitle({title: startseite.Titel}) }}
 
 <section class="section">
     <div class="container">
