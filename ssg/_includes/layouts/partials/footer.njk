@@ -4,9 +4,13 @@
             <div class="container">
                 <div class="is-flex is-justify-content-space-between is-align-items-center">
                     <div class="left">
-                        <a class="button is-primary" href="/">Startseite</a>
-                        <a class="button is-primary" href="/">Vorstand</a>
-                        <a class="button is-primary" href="/">Kontakt</a>
+                        {% for item in fussnavigation.Navigationspunkte %}
+                            {% if item.__component == "navigation.startseite" %}
+                                <a class="button is-primary" href="/">{{ item.Beschriftung }}</a>
+                            {% else %}
+                                <a class="button is-primary" href="/{{ item.Seite.Permalink | slug }}/">{{ item.Beschriftung }}</a>
+                            {% endif %}
+                        {% endfor %}
                     </div>
                     <div class="right"> &copy;2021 EAGLESLINEDANCERS – Eimatt 16, 6372 Ennetmoos</div>
                 </div>

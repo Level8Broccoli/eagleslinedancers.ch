@@ -1,0 +1,12 @@
+---js
+{
+    layout: "layouts/base.njk",
+    pagination: {
+        data: "seiten",
+        size: 1,
+        alias: "seite",
+    },
+    permalink: "{{seite.Permalink | slug}}/",
+}
+---
+{{seite.Titel}}
