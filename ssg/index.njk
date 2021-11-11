@@ -11,11 +11,7 @@ layout: layouts/base.njk
 
 <section class="section">
     <div class="container">
-        {% for item in startseite.Inhalt %}
-            {% if item.__component == "text.formattierter-text" %}
-                {%- from "components/FormattierterText.njk" import FormattierterText -%}
-                {{ FormattierterText({content: item.FormattierterText}) }}
-            {% endif %}
-        {% endfor %}
+        {%- from "components/DynamicZone.njk" import DynamicZone -%}
+        {{ DynamicZone({Inhalt: startseite.Inhalt}) }}
     </div>
 </section>

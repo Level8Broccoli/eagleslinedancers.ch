@@ -12,4 +12,5 @@
     }
 }
 ---
-{{seite.Titel}}
+{%- from "components/DynamicZone.njk" import DynamicZone -%}
+{{ DynamicZone({Inhalt: seite.Inhalt}) }}

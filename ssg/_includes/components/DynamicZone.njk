@@ -1,0 +1,8 @@
+{% macro DynamicZone(params) %}
+    {% for item in params.Inhalt %}
+        {% if item.__component == "text.formattierter-text" %}
+            {%- from "components/FormattierterText.njk" import FormattierterText -%}
+            {{ FormattierterText({content: item.FormattierterText}) }}
+        {% endif %}
+    {% endfor %}
+{% endmacro %}
