@@ -13,11 +13,7 @@
             {% include "./partials/navbar.njk" %}
         </header>
         <main class="has-background-white">
-            <section class="section">
-                <div class="container">
-                    {{ content | safe }}
-                </div>
-            </section>
+            {{ content | safe }}
         </main>
         <footer>
             {% include "./partials/footer.njk" %}

@@ -1,0 +1,20 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: max-content 1fr max-content;
+}
+
+img.ea-brand-logo {
+  max-height: 60px;
+  max-width: 61px;
+}
+
+.frontpage-title {
+  background: #f1f1f1;
+  background-image: url("/images/bg.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: #813736;
+  position: relative;
+  text-shadow: 0px 0px 50px #ffffff;
+}

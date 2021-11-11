@@ -1,11 +1,21 @@
 ---
 layout: layouts/base.njk
 ---
+<div class="frontpage-title">
+    <section class="section">
+        <div class="container">
+            <h2 class="title is-1 has-text-primary">{{ startseite.Titel }}</h2>
+        </section>
+    </div>
+</div>
 
-{{ startseite.Titel }}
-{% for item in startseite.Inhalt %}
-    {% if item.__component == "text.formattierter-text" %}
-        {%- from "components/FormattierterText.njk" import FormattierterText -%}
-        {{ FormattierterText({content: item.FormattierterText}) }}
-    {% endif %}
-{% endfor %}
+<section class="section">
+    <div class="container">
+        {% for item in startseite.Inhalt %}
+            {% if item.__component == "text.formattierter-text" %}
+                {%- from "components/FormattierterText.njk" import FormattierterText -%}
+                {{ FormattierterText({content: item.FormattierterText}) }}
+            {% endif %}
+        {% endfor %}
+    </div>
+</section>
