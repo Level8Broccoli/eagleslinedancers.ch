@@ -25,7 +25,10 @@
     "Inhalt": {
       "type": "dynamiczone",
       "components": [
-        "text.formattierter-text"
+        "text.formattierter-text",
+        "interaktion.link",
+        "text.abschnittstitel",
+        "medien.bild"
       ]
     }
   }

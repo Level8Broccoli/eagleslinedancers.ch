@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/11/2021 8:42:40 PM"
+    "x-generation-date": "11/11/2021 9:57:22 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4224,7 +4224,10 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "text.formattierter-text"
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
                       ]
                     },
                     "id": {
@@ -4236,6 +4239,176 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
                   ]
                 }
               ]
@@ -4267,7 +4440,10 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "text.formattierter-text"
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
                       ]
                     },
                     "id": {
@@ -4279,6 +4455,176 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.link",
+                        "text.abschnittstitel",
+                        "medien.bild"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "type": "array",
+                      "items": {
+                        "required": [
+                          "id",
+                          "name",
+                          "hash",
+                          "mime",
+                          "size",
+                          "url",
+                          "provider"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "name": {
+                            "type": "string"
+                          },
+                          "alternativeText": {
+                            "type": "string"
+                          },
+                          "caption": {
+                            "type": "string"
+                          },
+                          "width": {
+                            "type": "integer"
+                          },
+                          "height": {
+                            "type": "integer"
+                          },
+                          "formats": {
+                            "type": "object"
+                          },
+                          "hash": {
+                            "type": "string"
+                          },
+                          "ext": {
+                            "type": "string"
+                          },
+                          "mime": {
+                            "type": "string"
+                          },
+                          "size": {
+                            "type": "number"
+                          },
+                          "url": {
+                            "type": "string"
+                          },
+                          "previewUrl": {
+                            "type": "string"
+                          },
+                          "provider": {
+                            "type": "string"
+                          },
+                          "provider_metadata": {
+                            "type": "object"
+                          },
+                          "related": {
+                            "type": "string"
+                          },
+                          "created_by": {
+                            "type": "string"
+                          },
+                          "updated_by": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
                   ]
                 }
               ]
