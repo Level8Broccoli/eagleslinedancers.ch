@@ -2,12 +2,13 @@
   "collectionName": "components_medien_bilder",
   "info": {
     "name": "Bild",
-    "icon": "image"
+    "icon": "image",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Bild": {
-      "collection": "file",
+      "model": "file",
       "via": "related",
       "allowedTypes": [
         "images"
