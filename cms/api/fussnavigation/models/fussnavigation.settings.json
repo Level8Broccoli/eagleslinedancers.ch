@@ -2,7 +2,8 @@
   "kind": "singleType",
   "collectionName": "fussnavigations",
   "info": {
-    "name": "Fussnavigation"
+    "name": "Fussnavigation",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -11,7 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "Seiten": {
+    "Navigationspunkte": {
       "type": "dynamiczone",
       "components": [
         "navigation.seite",

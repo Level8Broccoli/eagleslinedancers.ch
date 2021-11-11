@@ -318,7 +318,7 @@
           "id": {
             "type": "string"
           },
-          "Seiten": {
+          "Navigationspunkte": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -400,7 +400,7 @@
       },
       "NewFussnavigation": {
         "properties": {
-          "Seiten": {
+          "Navigationspunkte": {
             "type": "array",
             "items": {
               "oneOf": [

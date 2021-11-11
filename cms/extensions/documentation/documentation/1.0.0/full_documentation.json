@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/11/2021 8:05:53 PM"
+    "x-generation-date": "11/11/2021 8:42:40 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3714,7 +3714,7 @@
           "id": {
             "type": "string"
           },
-          "Seiten": {
+          "Navigationspunkte": {
             "type": "array",
             "items": {
               "oneOf": [
@@ -3796,7 +3796,7 @@
       },
       "NewFussnavigation": {
         "properties": {
-          "Seiten": {
+          "Navigationspunkte": {
             "type": "array",
             "items": {
               "oneOf": [
