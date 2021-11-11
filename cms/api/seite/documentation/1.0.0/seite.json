@@ -517,13 +517,16 @@
       "Seite": {
         "required": [
           "id",
-          "Pfad"
+          "Permalink"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "Titel": {
+            "type": "string"
+          },
+          "Permalink": {
             "type": "string"
           },
           "Inhalt": {
@@ -551,9 +554,6 @@
                 }
               ]
             }
-          },
-          "Pfad": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -563,10 +563,13 @@
       },
       "NewSeite": {
         "required": [
-          "Pfad"
+          "Permalink"
         ],
         "properties": {
           "Titel": {
+            "type": "string"
+          },
+          "Permalink": {
             "type": "string"
           },
           "Inhalt": {
@@ -594,9 +597,6 @@
                 }
               ]
             }
-          },
-          "Pfad": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

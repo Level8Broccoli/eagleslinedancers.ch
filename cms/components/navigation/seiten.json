@@ -11,12 +11,6 @@
       "type": "string",
       "required": true
     },
-    "Pfad": {
-      "type": "string",
-      "required": true,
-      "unique": true,
-      "regex": "^[a-z0-9]+(?:-[a-z0-9]+)*$"
-    },
     "Seiten": {
       "type": "component",
       "repeatable": true,

@@ -340,7 +340,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -349,11 +349,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"
@@ -422,7 +422,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -431,11 +431,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"

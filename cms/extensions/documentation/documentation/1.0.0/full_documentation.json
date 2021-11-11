@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/09/2021 10:31:41 PM"
+    "x-generation-date": "11/11/2021 8:05:53 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3736,7 +3736,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -3745,11 +3745,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"
@@ -3818,7 +3818,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -3827,11 +3827,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"
@@ -3913,7 +3913,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -3922,11 +3922,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"
@@ -3979,7 +3979,7 @@
                           "Seite": {
                             "required": [
                               "id",
-                              "Pfad"
+                              "Permalink"
                             ],
                             "properties": {
                               "id": {
@@ -3988,11 +3988,11 @@
                               "Titel": {
                                 "type": "string"
                               },
+                              "Permalink": {
+                                "type": "string"
+                              },
                               "Inhalt": {
                                 "type": "dynamiczone"
-                              },
-                              "Pfad": {
-                                "type": "string"
                               },
                               "published_at": {
                                 "type": "string"
@@ -4007,15 +4007,11 @@
                           }
                         }
                       }
-                    },
-                    "Pfad": {
-                      "type": "string"
                     }
                   },
                   "required": [
                     "id",
-                    "Beschriftung",
-                    "Pfad"
+                    "Beschriftung"
                   ]
                 },
                 {
@@ -4070,7 +4066,7 @@
                     "Seite": {
                       "required": [
                         "id",
-                        "Pfad"
+                        "Permalink"
                       ],
                       "properties": {
                         "id": {
@@ -4079,11 +4075,11 @@
                         "Titel": {
                           "type": "string"
                         },
+                        "Permalink": {
+                          "type": "string"
+                        },
                         "Inhalt": {
                           "type": "dynamiczone"
-                        },
-                        "Pfad": {
-                          "type": "string"
                         },
                         "published_at": {
                           "type": "string"
@@ -4136,7 +4132,7 @@
                           "Seite": {
                             "required": [
                               "id",
-                              "Pfad"
+                              "Permalink"
                             ],
                             "properties": {
                               "id": {
@@ -4145,11 +4141,11 @@
                               "Titel": {
                                 "type": "string"
                               },
+                              "Permalink": {
+                                "type": "string"
+                              },
                               "Inhalt": {
                                 "type": "dynamiczone"
-                              },
-                              "Pfad": {
-                                "type": "string"
                               },
                               "published_at": {
                                 "type": "string"
@@ -4164,15 +4160,11 @@
                           }
                         }
                       }
-                    },
-                    "Pfad": {
-                      "type": "string"
                     }
                   },
                   "required": [
                     "id",
-                    "Beschriftung",
-                    "Pfad"
+                    "Beschriftung"
                   ]
                 },
                 {
@@ -4211,13 +4203,16 @@
       "Seite": {
         "required": [
           "id",
-          "Pfad"
+          "Permalink"
         ],
         "properties": {
           "id": {
             "type": "string"
           },
           "Titel": {
+            "type": "string"
+          },
+          "Permalink": {
             "type": "string"
           },
           "Inhalt": {
@@ -4245,9 +4240,6 @@
                 }
               ]
             }
-          },
-          "Pfad": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",
@@ -4257,10 +4249,13 @@
       },
       "NewSeite": {
         "required": [
-          "Pfad"
+          "Permalink"
         ],
         "properties": {
           "Titel": {
+            "type": "string"
+          },
+          "Permalink": {
             "type": "string"
           },
           "Inhalt": {
@@ -4288,9 +4283,6 @@
                 }
               ]
             }
-          },
-          "Pfad": {
-            "type": "string"
           },
           "published_at": {
             "type": "string",

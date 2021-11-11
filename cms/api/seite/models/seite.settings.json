@@ -16,7 +16,7 @@
       "type": "string",
       "pluginOptions": {}
     },
-    "Pfad": {
+    "Permalink": {
       "type": "string",
       "required": true,
       "unique": true,
