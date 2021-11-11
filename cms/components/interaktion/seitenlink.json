@@ -1,8 +1,9 @@
 {
   "collectionName": "components_interaktion_links",
   "info": {
-    "name": "Link",
-    "icon": "link"
+    "name": "Seitenlink",
+    "icon": "link",
+    "description": ""
   },
   "options": {},
   "attributes": {

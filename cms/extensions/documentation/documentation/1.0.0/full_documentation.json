@@ -4225,7 +4225,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4247,7 +4247,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4299,7 +4299,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4327,7 +4327,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4441,7 +4441,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4463,7 +4463,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4515,7 +4515,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
@@ -4543,7 +4543,7 @@
                       "type": "string",
                       "enum": [
                         "text.formattierter-text",
-                        "interaktion.link",
+                        "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild"
                       ]
