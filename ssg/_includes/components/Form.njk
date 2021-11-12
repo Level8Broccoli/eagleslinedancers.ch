@@ -5,21 +5,21 @@
                 <div class="field">
                     <label class="label">{{field.Beschriftung}}</label>
                     <div class="control">
-                        <input class="input" type="text"/>
+                        <input name="{{field.Beschriftung}}" class="input" type="text"/>
                     </div>
                 </div>
             {% elif field.Feldart == "Email" %}
                 <div class="field">
                     <label class="label">{{field.Beschriftung}}</label>
                     <div class="control">
-                        <input class="input" type="email"/>
+                        <input name="{{field.Beschriftung}}" class="input" type="email"/>
                     </div>
                 </div>
             {% elif field.Feldart == "Textblock" %}
                 <div class="field">
                     <label class="label">{{field.Beschriftung}}</label>
                     <div class="control">
-                        <textarea class="textarea"></textarea>
+                        <textarea name="{{field.Beschriftung}}" class="textarea"></textarea>
                     </div>
                 </div>
             {% endif %}
