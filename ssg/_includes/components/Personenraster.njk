@@ -1,0 +1,18 @@
+{% macro Personenraster(params) %}
+    <div class="columns is-multiline">
+        {% for person in params.people %}
+            <div class="column is-one-third">
+                <div class="block has-text-centered">
+                    <figure class="image">
+                        <img src="https://eagles.kemet.ch{{person.Portrait.url}}">
+                    </figure>
+                    <div class="subtitle">
+                        <span class="has-text-primary">{{ person.Name }}</span>
+                        <br/>
+                        <span class="has-text-grey">{{ person.Funktion }}</span>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endmacro %}

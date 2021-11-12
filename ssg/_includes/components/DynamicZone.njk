@@ -9,6 +9,16 @@
             </h2>
         {% elif item.__component == "interaktion.seitenlink" %}
             <a class="button is-primary" href="/{{item.Seite.Permalink}}/">{{item.Beschriftung}}</a>
+        {% elif item.__component == "medien.bild" %}
+            <figure class="image">
+                <img src="https://eagles.kemet.ch{{item.Bild.url}}">
+            </figure>
+        {% elif item.__component == "interaktion.kontaktformular" %}
+            {%- from "components/Form.njk" import Form -%}
+            {{ Form({fields: item.Formularfeld}) }}
+        {% elif item.__component == "layout.personenraster" %}
+            {%- from "components/Personenraster.njk" import Personenraster -%}
+            {{ Personenraster({people: item.Personeneintrag}) }}
         {% endif %}
     {% endfor %}
 {% endmacro %}

@@ -1,0 +1,33 @@
+{% macro Form(params) %}
+    <form data-netlify="true">
+        {% for field in params.fields %}
+            {% if field.Feldart == "Text" %}
+                <div class="field">
+                    <label class="label">{{field.Beschriftung}}</label>
+                    <div class="control">
+                        <input class="input" type="text"/>
+                    </div>
+                </div>
+            {% elif field.Feldart == "Email" %}
+                <div class="field">
+                    <label class="label">{{field.Beschriftung}}</label>
+                    <div class="control">
+                        <input class="input" type="email"/>
+                    </div>
+                </div>
+            {% elif field.Feldart == "Textblock" %}
+                <div class="field">
+                    <label class="label">{{field.Beschriftung}}</label>
+                    <div class="control">
+                        <textarea class="textarea"></textarea>
+                    </div>
+                </div>
+            {% endif %}
+        {% endfor %}
+        <div class="field is-grouped">
+            <div class="control">
+                <button class="button is-primary" type="submit">Absenden</button>
+            </div>
+        </div>
+    </form>
+{% endmacro %}
