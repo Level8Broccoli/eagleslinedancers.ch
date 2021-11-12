@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_interaktion_formularfelds",
+  "info": {
+    "name": "Formularfeld",
+    "icon": "stream",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Beschriftung": {
+      "type": "string",
+      "required": true
+    },
+    "Feldart": {
+      "type": "enumeration",
+      "enum": [
+        "Email",
+        "Text",
+        "Textblock"
+      ],
+      "default": "Text",
+      "required": true
+    }
+  }
+}

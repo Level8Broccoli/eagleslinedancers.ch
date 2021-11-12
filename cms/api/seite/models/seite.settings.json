@@ -28,7 +28,8 @@
         "text.formattierter-text",
         "interaktion.seitenlink",
         "text.abschnittstitel",
-        "medien.bild"
+        "medien.bild",
+        "interaktion.kontaktformular"
       ]
     }
   }

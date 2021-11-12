@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_interaktion_kontaktformulars",
+  "info": {
+    "name": "Kontaktformular",
+    "icon": "envelope"
+  },
+  "options": {},
+  "attributes": {
+    "Formularfeld": {
+      "type": "component",
+      "repeatable": true,
+      "component": "interaktion.formularfeld"
+    }
+  }
+}

@@ -541,7 +541,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -563,7 +564,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -615,7 +617,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -643,7 +646,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -720,6 +724,54 @@
                   "required": [
                     "id",
                     "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Formularfeld": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Beschriftung",
+                          "Feldart"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Beschriftung": {
+                            "type": "string"
+                          },
+                          "Feldart": {
+                            "type": "string",
+                            "default": "Text",
+                            "enum": [
+                              "Email",
+                              "Text",
+                              "Textblock"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]
@@ -754,7 +806,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -776,7 +829,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -828,7 +882,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -856,7 +911,8 @@
                         "text.formattierter-text",
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
-                        "medien.bild"
+                        "medien.bild",
+                        "interaktion.kontaktformular"
                       ]
                     },
                     "id": {
@@ -933,6 +989,54 @@
                   "required": [
                     "id",
                     "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Formularfeld": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Beschriftung",
+                          "Feldart"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Beschriftung": {
+                            "type": "string"
+                          },
+                          "Feldart": {
+                            "type": "string",
+                            "default": "Text",
+                            "enum": [
+                              "Email",
+                              "Text",
+                              "Textblock"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
                   ]
                 }
               ]
