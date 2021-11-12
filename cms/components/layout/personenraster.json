@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_layout_personenrasters",
+  "info": {
+    "name": "Personenraster",
+    "icon": "address-card"
+  },
+  "options": {},
+  "attributes": {
+    "Personeneintrag": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.personeneintrag",
+      "required": true
+    }
+  }
+}

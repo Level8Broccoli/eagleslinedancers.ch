@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/12/2021 12:10:30 AM"
+    "x-generation-date": "11/12/2021 12:16:05 AM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4228,7 +4228,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4251,7 +4252,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4304,7 +4306,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4333,7 +4336,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4421,7 +4425,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4458,6 +4463,116 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Personeneintrag": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Name"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Portrait": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Personeneintrag"
                   ]
                 }
               ]
@@ -4493,7 +4608,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4516,7 +4632,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4569,7 +4686,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4598,7 +4716,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4686,7 +4805,8 @@
                         "interaktion.seitenlink",
                         "text.abschnittstitel",
                         "medien.bild",
-                        "interaktion.kontaktformular"
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
                       ]
                     },
                     "id": {
@@ -4723,6 +4843,116 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Personeneintrag": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Name"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Portrait": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Personeneintrag"
                   ]
                 }
               ]
@@ -4760,7 +4990,12 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "text.formattierter-text"
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
                       ]
                     },
                     "id": {
@@ -4772,6 +5007,338 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Personeneintrag": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Name"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Portrait": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Personeneintrag"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Formularfeld": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Beschriftung",
+                          "Feldart"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Beschriftung": {
+                            "type": "string"
+                          },
+                          "Feldart": {
+                            "type": "string",
+                            "default": "Text",
+                            "enum": [
+                              "Email",
+                              "Text",
+                              "Textblock"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
                   ]
                 }
               ]
@@ -4793,7 +5360,12 @@
                     "__component": {
                       "type": "string",
                       "enum": [
-                        "text.formattierter-text"
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
                       ]
                     },
                     "id": {
@@ -4805,6 +5377,338 @@
                   },
                   "required": [
                     "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Personeneintrag": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Name"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Portrait": {
+                            "required": [
+                              "id",
+                              "name",
+                              "hash",
+                              "mime",
+                              "size",
+                              "url",
+                              "provider"
+                            ],
+                            "properties": {
+                              "id": {
+                                "type": "string"
+                              },
+                              "name": {
+                                "type": "string"
+                              },
+                              "alternativeText": {
+                                "type": "string"
+                              },
+                              "caption": {
+                                "type": "string"
+                              },
+                              "width": {
+                                "type": "integer"
+                              },
+                              "height": {
+                                "type": "integer"
+                              },
+                              "formats": {
+                                "type": "object"
+                              },
+                              "hash": {
+                                "type": "string"
+                              },
+                              "ext": {
+                                "type": "string"
+                              },
+                              "mime": {
+                                "type": "string"
+                              },
+                              "size": {
+                                "type": "number"
+                              },
+                              "url": {
+                                "type": "string"
+                              },
+                              "previewUrl": {
+                                "type": "string"
+                              },
+                              "provider": {
+                                "type": "string"
+                              },
+                              "provider_metadata": {
+                                "type": "object"
+                              },
+                              "related": {
+                                "type": "string"
+                              },
+                              "created_by": {
+                                "type": "string"
+                              },
+                              "updated_by": {
+                                "type": "string"
+                              }
+                            }
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Personeneintrag"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Formularfeld": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Beschriftung",
+                          "Feldart"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Beschriftung": {
+                            "type": "string"
+                          },
+                          "Feldart": {
+                            "type": "string",
+                            "default": "Text",
+                            "enum": [
+                              "Email",
+                              "Text",
+                              "Textblock"
+                            ]
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
                   ]
                 }
               ]

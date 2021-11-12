@@ -29,7 +29,8 @@
         "interaktion.seitenlink",
         "text.abschnittstitel",
         "medien.bild",
-        "interaktion.kontaktformular"
+        "interaktion.kontaktformular",
+        "layout.personenraster"
       ]
     }
   }

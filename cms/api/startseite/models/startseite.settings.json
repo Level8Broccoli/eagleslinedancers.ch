@@ -18,7 +18,12 @@
     "Inhalt": {
       "type": "dynamiczone",
       "components": [
-        "text.formattierter-text"
+        "text.formattierter-text",
+        "text.abschnittstitel",
+        "medien.bild",
+        "layout.personenraster",
+        "interaktion.kontaktformular",
+        "interaktion.seitenlink"
       ]
     }
   }

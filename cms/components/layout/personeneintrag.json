@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_layout_personeneintrags",
+  "info": {
+    "name": "Personeneintrag",
+    "icon": "child",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string",
+      "required": true
+    },
+    "Funktion": {
+      "type": "string"
+    },
+    "Portrait": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    }
+  }
+}
