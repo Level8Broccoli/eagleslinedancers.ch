@@ -1,5 +1,5 @@
 {% macro Form(params) %}
-    <form data-netlify="true">
+    <form data-netlify="true" action="/" name="Kontaktformular" method="POST">
         {% for field in params.fields %}
             {% if field.Feldart == "Text" %}
                 <div class="field">
