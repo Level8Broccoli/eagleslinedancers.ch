@@ -24,6 +24,9 @@
         {% elif item.__component == "layout.personenraster" %}
             {%- from "components/Personenraster.njk" import Personenraster -%}
             {{ Personenraster({people: item.Personeneintrag}) }}
+        {% elif item.__component == "layout.monatstanz" %}
+            {%- from "components/Monatstanz.njk" import Monatstanz -%}
+            {{ Monatstanz({dates: item.Daten, dances: item.Tanz}) }}
         {% endif %}
     {% endfor %}
 {% endmacro %}

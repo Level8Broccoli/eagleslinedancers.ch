@@ -1,0 +1,34 @@
+{% macro Monatstanz(params) %}
+    <div class="table-container">
+        <table class="table is-hoverable">
+            <thead>
+                <tr>
+                    <td></td>
+                    {% for date in params.dates %}
+                        <td>
+                            <h6 class="title">
+                                {{ date.Datum }}
+                            </h6>
+                        </td>
+                    {% endfor %}
+                </tr>
+            </thead>
+            <tbody>
+                {% for dance in params.dances %}
+                    <tr>
+                        <td>
+                            <h6 class="title">
+                                {{ dance.Tanz }}
+                            </h6>
+                        </td>
+                        {% for date in params.dates %}
+                            <td>
+                                <h6 class="title has-text-centered">x</h6>
+                            </td>
+                        {% endfor %}
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+{% endmacro %}
