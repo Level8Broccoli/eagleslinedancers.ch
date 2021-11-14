@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/14/2021 5:38:47 PM"
+    "x-generation-date": "11/14/2021 5:54:41 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4231,7 +4231,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4257,7 +4258,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4313,7 +4315,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4345,7 +4348,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4436,7 +4440,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4516,7 +4521,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4628,7 +4634,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4723,7 +4730,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4803,6 +4811,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]
@@ -4841,7 +4928,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4867,7 +4955,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4923,7 +5012,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -4955,7 +5045,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5046,7 +5137,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5126,7 +5218,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5238,7 +5331,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5333,7 +5427,8 @@
                         "interaktion.kontaktformular",
                         "layout.personenraster",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5413,6 +5508,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]
@@ -5457,7 +5631,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5483,7 +5658,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5515,7 +5691,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5606,7 +5783,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5718,7 +5896,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5798,7 +5977,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5854,7 +6034,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -5949,7 +6130,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6029,6 +6211,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]
@@ -6057,7 +6318,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6083,7 +6345,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6115,7 +6378,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6206,7 +6470,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6318,7 +6583,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6398,7 +6664,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6454,7 +6721,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6549,7 +6817,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -6629,6 +6898,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]

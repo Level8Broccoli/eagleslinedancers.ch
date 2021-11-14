@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_layout_tabellenueberschrifts",
+  "info": {
+    "name": "Tabellenüberschrift",
+    "icon": "arrows-alt-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "FormattierterText": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

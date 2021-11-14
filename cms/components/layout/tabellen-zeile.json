@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_layout_tabellen_zeiles",
+  "info": {
+    "name": "Tabellen Zeile",
+    "icon": "th-list",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Zeilentitel": {
+      "type": "string",
+      "required": true
+    },
+    "Tabellenzellen": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.tabellen-zelle"
+    }
+  }
+}

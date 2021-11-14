@@ -337,7 +337,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -363,7 +364,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -395,7 +397,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -486,7 +489,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -598,7 +602,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -678,7 +683,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -734,7 +740,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -829,7 +836,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -909,6 +917,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]
@@ -937,7 +1024,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -963,7 +1051,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -995,7 +1084,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1086,7 +1176,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1198,7 +1289,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1278,7 +1370,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1334,7 +1427,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1429,7 +1523,8 @@
                         "interaktion.kontaktformular",
                         "interaktion.seitenlink",
                         "interaktion.download",
-                        "medien.galerie"
+                        "medien.galerie",
+                        "layout.workshop"
                       ]
                     },
                     "id": {
@@ -1509,6 +1604,85 @@
                   "required": [
                     "id",
                     "Galerie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Tabellentitel": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "FormattierterText"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "FormattierterText": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tabellenzeilen": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Zeilentitel"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Zeilentitel": {
+                            "type": "string"
+                          },
+                          "Tabellenzellen": {
+                            "type": "array",
+                            "items": {
+                              "type": "object",
+                              "required": [
+                                "id",
+                                "Tabellenzeile"
+                              ],
+                              "properties": {
+                                "id": {
+                                  "type": "string"
+                                },
+                                "Tabellenzeile": {
+                                  "type": "string"
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Tabellentitel"
                   ]
                 }
               ]

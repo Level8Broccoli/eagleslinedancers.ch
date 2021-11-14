@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_layout_tabellen_zelles",
+  "info": {
+    "name": " Tabellen Zelle",
+    "icon": "border-style"
+  },
+  "options": {},
+  "attributes": {
+    "Tabellenzeile": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

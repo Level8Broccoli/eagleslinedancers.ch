@@ -25,7 +25,8 @@
         "interaktion.kontaktformular",
         "interaktion.seitenlink",
         "interaktion.download",
-        "medien.galerie"
+        "medien.galerie",
+        "layout.workshop"
       ]
     }
   }
