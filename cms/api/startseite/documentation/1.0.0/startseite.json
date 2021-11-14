@@ -496,6 +496,12 @@
                           "id": {
                             "type": "string"
                           },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          },
                           "Portrait": {
                             "required": [
                               "id",
@@ -562,12 +568,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -619,6 +619,35 @@
                               "Textblock"
                             ]
                           }
+                        }
+                      }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
                         }
                       }
                     }
@@ -866,6 +895,12 @@
                           "id": {
                             "type": "string"
                           },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          },
                           "Portrait": {
                             "required": [
                               "id",
@@ -932,12 +967,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -989,6 +1018,35 @@
                               "Textblock"
                             ]
                           }
+                        }
+                      }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
                         }
                       }
                     }

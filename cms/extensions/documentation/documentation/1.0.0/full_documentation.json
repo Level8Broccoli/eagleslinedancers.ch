@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/12/2021 12:16:05 AM"
+    "x-generation-date": "11/14/2021 4:33:09 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4459,6 +4459,35 @@
                           }
                         }
                       }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -4491,6 +4520,12 @@
                         ],
                         "properties": {
                           "id": {
+                            "type": "string"
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
                             "type": "string"
                           },
                           "Portrait": {
@@ -4559,12 +4594,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -4839,6 +4868,35 @@
                           }
                         }
                       }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
                     }
                   },
                   "required": [
@@ -4871,6 +4929,12 @@
                         ],
                         "properties": {
                           "id": {
+                            "type": "string"
+                          },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
                             "type": "string"
                           },
                           "Portrait": {
@@ -4939,12 +5003,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -5156,6 +5214,12 @@
                           "id": {
                             "type": "string"
                           },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          },
                           "Portrait": {
                             "required": [
                               "id",
@@ -5222,12 +5286,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -5279,6 +5337,35 @@
                               "Textblock"
                             ]
                           }
+                        }
+                      }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
                         }
                       }
                     }
@@ -5526,6 +5613,12 @@
                           "id": {
                             "type": "string"
                           },
+                          "Name": {
+                            "type": "string"
+                          },
+                          "Funktion": {
+                            "type": "string"
+                          },
                           "Portrait": {
                             "required": [
                               "id",
@@ -5592,12 +5685,6 @@
                                 "type": "string"
                               }
                             }
-                          },
-                          "Name": {
-                            "type": "string"
-                          },
-                          "Funktion": {
-                            "type": "string"
                           }
                         }
                       }
@@ -5649,6 +5736,35 @@
                               "Textblock"
                             ]
                           }
+                        }
+                      }
+                    },
+                    "Weiterleitung": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
                         }
                       }
                     }
