@@ -36,6 +36,16 @@
         "layout.workshop",
         "layout.monatstanz"
       ]
+    },
+    "Seitenspalte": {
+      "type": "dynamiczone",
+      "components": [
+        "text.formattierter-text",
+        "text.abschnittstitel",
+        "medien.bild",
+        "interaktion.seitenlink",
+        "interaktion.download"
+      ]
     }
   }
 }

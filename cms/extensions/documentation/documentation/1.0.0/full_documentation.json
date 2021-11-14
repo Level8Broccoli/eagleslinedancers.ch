@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/14/2021 6:07:45 PM"
+    "x-generation-date": "11/14/2021 7:33:40 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -3751,6 +3751,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -3831,6 +3834,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -3928,6 +3934,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -3992,6 +4001,9 @@
                                 "type": "string"
                               },
                               "Inhalt": {
+                                "type": "dynamiczone"
+                              },
+                              "Seitenspalte": {
                                 "type": "dynamiczone"
                               },
                               "published_at": {
@@ -4081,6 +4093,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -4145,6 +4160,9 @@
                                 "type": "string"
                               },
                               "Inhalt": {
+                                "type": "dynamiczone"
+                              },
+                              "Seitenspalte": {
                                 "type": "dynamiczone"
                               },
                               "published_at": {
@@ -4288,6 +4306,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -4496,6 +4517,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -4967,6 +4991,301 @@
               ]
             }
           },
+          "Seitenspalte": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
+                  ]
+                }
+              ]
+            }
+          },
           "published_at": {
             "type": "string",
             "format": "date-time"
@@ -5055,6 +5374,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -5265,6 +5587,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -5731,6 +6056,301 @@
                     "id",
                     "Daten",
                     "Tanz"
+                  ]
+                }
+              ]
+            }
+          },
+          "Seitenspalte": {
+            "type": "array",
+            "items": {
+              "oneOf": [
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "FormattierterText": {
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "id"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Abschnittstitel": {
+                      "type": "string"
+                    },
+                    "Linie": {
+                      "type": "boolean",
+                      "default": true
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Abschnittstitel",
+                    "Linie"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Bild": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Bild"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Beschriftung": {
+                      "type": "string"
+                    },
+                    "Seite": {
+                      "required": [
+                        "id",
+                        "Permalink"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "Titel": {
+                          "type": "string"
+                        },
+                        "Permalink": {
+                          "type": "string"
+                        },
+                        "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
+                        "published_at": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
                   ]
                 }
               ]
@@ -6098,6 +6718,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -6153,6 +6776,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -6857,6 +7483,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -6912,6 +7541,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {

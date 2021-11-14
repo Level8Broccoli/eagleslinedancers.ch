@@ -660,6 +660,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -715,6 +718,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
@@ -1419,6 +1425,9 @@
                         "Inhalt": {
                           "type": "dynamiczone"
                         },
+                        "Seitenspalte": {
+                          "type": "dynamiczone"
+                        },
                         "published_at": {
                           "type": "string"
                         },
@@ -1474,6 +1483,9 @@
                           "type": "string"
                         },
                         "Inhalt": {
+                          "type": "dynamiczone"
+                        },
+                        "Seitenspalte": {
                           "type": "dynamiczone"
                         },
                         "published_at": {
