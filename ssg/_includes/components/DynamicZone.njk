@@ -11,8 +11,11 @@
             <a class="button is-primary" href="/{{item.Seite.Permalink}}/">{{item.Beschriftung}}</a>
         {% elif item.__component == "medien.bild" %}
             <figure class="image">
-                <img src="https://eagles.kemet.ch{{item.Bild.url}}">
+                <img alt="item.Bild.name" src="https://eagles.kemet.ch{{item.Bild.url}}">
             </figure>
+        {% elif item.__component == "medien.galerie" %}
+            {%- from "components/Gallery.njk" import Gallery -%}
+            {{ Gallery({images: item.Galerie}) }}
         {% elif item.__component == "interaktion.kontaktformular" %}
             {%- from "components/Form.njk" import Form -%}
             {{ Form({fields: item.Formularfeld, forwarding: item.Weiterleitung}) }}
