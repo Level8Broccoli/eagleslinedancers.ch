@@ -27,6 +27,9 @@
         {% elif item.__component == "layout.monatstanz" %}
             {%- from "components/Monatstanz.njk" import Monatstanz -%}
             {{ Monatstanz({dates: item.Daten, dances: item.Tanz}) }}
+        {% elif item.__component == "layout.workshop" %}
+            {%- from "components/Workshop.njk" import Workshop -%}
+            {{ Workshop({titles: item.Tabellentitel, rows: item.Tabellenzeilen}) }}
         {% endif %}
     {% endfor %}
 {% endmacro %}

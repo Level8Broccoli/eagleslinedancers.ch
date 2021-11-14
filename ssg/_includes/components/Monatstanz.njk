@@ -3,13 +3,13 @@
         <table class="table is-hoverable">
             <thead>
                 <tr>
-                    <td></td>
+                    <th></th>
                     {% for date in params.dates %}
-                        <td>
-                            <h6 class="title">
+                        <th>
+                            <h4 class="title is-4">
                                 {{ date.Datum }}
-                            </h6>
-                        </td>
+                            </h4>
+                        </th>
                     {% endfor %}
                 </tr>
             </thead>
@@ -17,13 +17,13 @@
                 {% for dance in params.dances %}
                     <tr>
                         <td>
-                            <h6 class="title">
+                            <h5 class="title is-5">
                                 {{ dance.Tanz }}
-                            </h6>
+                            </h5>
                         </td>
                         {% for date in params.dates %}
                             <td>
-                                <h6 class="title has-text-centered">x</h6>
+                                <h5 class="title is-5 has-text-centered">x</h5>
                             </td>
                         {% endfor %}
                     </tr>
