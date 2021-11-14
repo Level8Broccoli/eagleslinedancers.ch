@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_layout_monatstanzs",
+  "info": {
+    "name": "Monatstanz",
+    "icon": "th"
+  },
+  "options": {},
+  "attributes": {
+    "Daten": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.daten",
+      "required": true
+    },
+    "Tanz": {
+      "type": "component",
+      "repeatable": true,
+      "component": "layout.tanz",
+      "required": true
+    }
+  }
+}

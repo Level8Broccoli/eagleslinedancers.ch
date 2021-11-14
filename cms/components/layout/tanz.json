@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_layout_tanzs",
+  "info": {
+    "name": "Tanz",
+    "icon": "compact-disc"
+  },
+  "options": {},
+  "attributes": {
+    "Tanz": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

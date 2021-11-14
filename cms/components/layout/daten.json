@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_layout_datens",
+  "info": {
+    "name": "Daten",
+    "icon": "calendar-alt"
+  },
+  "options": {},
+  "attributes": {
+    "Datum": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

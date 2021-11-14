@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/14/2021 5:54:41 PM"
+    "x-generation-date": "11/14/2021 6:07:45 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4232,7 +4232,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4259,7 +4260,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4316,7 +4318,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4349,7 +4352,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4441,7 +4445,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4522,7 +4527,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4635,7 +4641,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4731,7 +4738,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4826,7 +4834,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4890,6 +4899,69 @@
                   "required": [
                     "id",
                     "Tabellentitel"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop",
+                        "layout.monatstanz"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Daten": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Datum"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Datum": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tanz": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Tanz"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Tanz": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Daten",
+                    "Tanz"
                   ]
                 }
               ]
@@ -4929,7 +5001,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -4956,7 +5029,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5013,7 +5087,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5046,7 +5121,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5138,7 +5214,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5219,7 +5296,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5332,7 +5410,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5428,7 +5507,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5523,7 +5603,8 @@
                         "layout.personenraster",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5587,6 +5668,69 @@
                   "required": [
                     "id",
                     "Tabellentitel"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop",
+                        "layout.monatstanz"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Daten": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Datum"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Datum": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tanz": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Tanz"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Tanz": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Daten",
+                    "Tanz"
                   ]
                 }
               ]
@@ -5632,7 +5776,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5659,7 +5804,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5692,7 +5838,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5784,7 +5931,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5897,7 +6045,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -5978,7 +6127,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6035,7 +6185,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6131,7 +6282,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6226,7 +6378,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6290,6 +6443,69 @@
                   "required": [
                     "id",
                     "Tabellentitel"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop",
+                        "layout.monatstanz"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Daten": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Datum"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Datum": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tanz": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Tanz"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Tanz": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Daten",
+                    "Tanz"
                   ]
                 }
               ]
@@ -6319,7 +6535,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6346,7 +6563,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6379,7 +6597,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6471,7 +6690,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6584,7 +6804,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6665,7 +6886,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6722,7 +6944,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6818,7 +7041,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6913,7 +7137,8 @@
                         "interaktion.seitenlink",
                         "interaktion.download",
                         "medien.galerie",
-                        "layout.workshop"
+                        "layout.workshop",
+                        "layout.monatstanz"
                       ]
                     },
                     "id": {
@@ -6977,6 +7202,69 @@
                   "required": [
                     "id",
                     "Tabellentitel"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download",
+                        "medien.galerie",
+                        "layout.workshop",
+                        "layout.monatstanz"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Daten": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Datum"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Datum": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    },
+                    "Tanz": {
+                      "type": "array",
+                      "items": {
+                        "type": "object",
+                        "required": [
+                          "id",
+                          "Tanz"
+                        ],
+                        "properties": {
+                          "id": {
+                            "type": "string"
+                          },
+                          "Tanz": {
+                            "type": "string"
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Daten",
+                    "Tanz"
                   ]
                 }
               ]
