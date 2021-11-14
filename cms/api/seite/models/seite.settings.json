@@ -31,7 +31,8 @@
         "medien.bild",
         "interaktion.kontaktformular",
         "layout.personenraster",
-        "interaktion.download"
+        "interaktion.download",
+        "medien.galerie"
       ]
     }
   }

@@ -24,7 +24,8 @@
         "layout.personenraster",
         "interaktion.kontaktformular",
         "interaktion.seitenlink",
-        "interaktion.download"
+        "interaktion.download",
+        "medien.galerie"
       ]
     }
   }
