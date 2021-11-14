@@ -13,5 +13,18 @@
 }
 ---
 <h1 class="title is-2">{{seite.Titel}}</h1>
-{%- from "components/DynamicZone.njk" import DynamicZone -%}
-{{ DynamicZone({Inhalt: seite.Inhalt}) }}
+{% if seite.Seitenspalte.length > 0 %}
+    <div class="columns">
+        <div class="column is-two-thirds">
+        {% endif %}
+        {%- from "components/DynamicZone.njk" import DynamicZone -%}
+        {{ DynamicZone({Inhalt: seite.Inhalt}) }}
+        {% if seite.Seitenspalte.length > 0 %}
+        </div>
+        <div class="column">
+            <div class="box">
+                {{ DynamicZone({Inhalt: seite.Seitenspalte}) }}
+            </div>
+        </div>
+    </div>
+{% endif %}

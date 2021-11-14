@@ -1,5 +1,5 @@
 {% macro FormattierterText(params) %}
-<div class="content">
+<div class="content" style="max-width: 60ch;">
     {{ params.content | markdownify | safe }}
 </div>
 {% endmacro %}
