@@ -9,6 +9,8 @@
             </h2>
         {% elif item.__component == "interaktion.seitenlink" %}
             <a class="button is-primary" href="/{{item.Seite.Permalink}}/">{{item.Beschriftung}}</a>
+        {% elif item.__component == "interaktion.download" %}
+            <a class="button is-primary" href="https://eagles.kemet.ch{{item.Dokument.url}}">{{item.Name}}</a>
         {% elif item.__component == "medien.bild" %}
             <figure class="image">
                 <img alt="item.Bild.name" src="https://eagles.kemet.ch{{item.Bild.url}}">
