@@ -30,7 +30,8 @@
         "text.abschnittstitel",
         "medien.bild",
         "interaktion.kontaktformular",
-        "layout.personenraster"
+        "layout.personenraster",
+        "interaktion.download"
       ]
     }
   }

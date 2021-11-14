@@ -23,7 +23,8 @@
         "medien.bild",
         "layout.personenraster",
         "interaktion.kontaktformular",
-        "interaktion.seitenlink"
+        "interaktion.seitenlink",
+        "interaktion.download"
       ]
     }
   }

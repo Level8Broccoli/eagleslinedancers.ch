@@ -14,7 +14,7 @@
       "name": "Apache 2.0",
       "url": "https://www.apache.org/licenses/LICENSE-2.0.html"
     },
-    "x-generation-date": "11/14/2021 4:33:09 PM"
+    "x-generation-date": "11/14/2021 5:36:52 PM"
   },
   "x-strapi-config": {
     "path": "/documentation",
@@ -4229,7 +4229,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4253,7 +4254,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4307,7 +4309,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4337,7 +4340,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4426,7 +4430,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4504,7 +4509,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4602,6 +4608,100 @@
                   "required": [
                     "id",
                     "Personeneintrag"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
                   ]
                 }
               ]
@@ -4638,7 +4738,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4662,7 +4763,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4716,7 +4818,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4746,7 +4849,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4835,7 +4939,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -4913,7 +5018,8 @@
                         "text.abschnittstitel",
                         "medien.bild",
                         "interaktion.kontaktformular",
-                        "layout.personenraster"
+                        "layout.personenraster",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5011,6 +5117,100 @@
                   "required": [
                     "id",
                     "Personeneintrag"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "interaktion.seitenlink",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "interaktion.kontaktformular",
+                        "layout.personenraster",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
                   ]
                 }
               ]
@@ -5053,7 +5253,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5077,7 +5278,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5107,7 +5309,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5196,7 +5399,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5306,7 +5510,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5384,7 +5589,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5426,6 +5632,100 @@
                   "required": [
                     "id",
                     "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
                   ]
                 }
               ]
@@ -5452,7 +5752,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5476,7 +5777,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5506,7 +5808,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5595,7 +5898,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5705,7 +6009,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5783,7 +6088,8 @@
                         "medien.bild",
                         "layout.personenraster",
                         "interaktion.kontaktformular",
-                        "interaktion.seitenlink"
+                        "interaktion.seitenlink",
+                        "interaktion.download"
                       ]
                     },
                     "id": {
@@ -5825,6 +6131,100 @@
                   "required": [
                     "id",
                     "Beschriftung"
+                  ]
+                },
+                {
+                  "properties": {
+                    "__component": {
+                      "type": "string",
+                      "enum": [
+                        "text.formattierter-text",
+                        "text.abschnittstitel",
+                        "medien.bild",
+                        "layout.personenraster",
+                        "interaktion.kontaktformular",
+                        "interaktion.seitenlink",
+                        "interaktion.download"
+                      ]
+                    },
+                    "id": {
+                      "type": "string"
+                    },
+                    "Name": {
+                      "type": "string"
+                    },
+                    "Dokument": {
+                      "required": [
+                        "id",
+                        "name",
+                        "hash",
+                        "mime",
+                        "size",
+                        "url",
+                        "provider"
+                      ],
+                      "properties": {
+                        "id": {
+                          "type": "string"
+                        },
+                        "name": {
+                          "type": "string"
+                        },
+                        "alternativeText": {
+                          "type": "string"
+                        },
+                        "caption": {
+                          "type": "string"
+                        },
+                        "width": {
+                          "type": "integer"
+                        },
+                        "height": {
+                          "type": "integer"
+                        },
+                        "formats": {
+                          "type": "object"
+                        },
+                        "hash": {
+                          "type": "string"
+                        },
+                        "ext": {
+                          "type": "string"
+                        },
+                        "mime": {
+                          "type": "string"
+                        },
+                        "size": {
+                          "type": "number"
+                        },
+                        "url": {
+                          "type": "string"
+                        },
+                        "previewUrl": {
+                          "type": "string"
+                        },
+                        "provider": {
+                          "type": "string"
+                        },
+                        "provider_metadata": {
+                          "type": "object"
+                        },
+                        "related": {
+                          "type": "string"
+                        },
+                        "created_by": {
+                          "type": "string"
+                        },
+                        "updated_by": {
+                          "type": "string"
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "id",
+                    "Name",
+                    "Dokument"
                   ]
                 }
               ]
