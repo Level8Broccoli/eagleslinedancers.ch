@@ -4,7 +4,7 @@
             <div class="container">
                 <div class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
                     <div class="left">
-                        {% for item in fussnavigation.Navigationspunkte %}
+                        {% for item in aggregate.secondNavigation %}
                             {% if item.__component == "navigation.startseite" %}
                                 <a class="button is-primary" href="/">{{ item.Beschriftung }}</a>
                             {% else %}
