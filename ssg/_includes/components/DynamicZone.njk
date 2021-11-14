@@ -15,7 +15,7 @@
             </figure>
         {% elif item.__component == "interaktion.kontaktformular" %}
             {%- from "components/Form.njk" import Form -%}
-            {{ Form({fields: item.Formularfeld}) }}
+            {{ Form({fields: item.Formularfeld, forwarding: item.Weiterleitung}) }}
         {% elif item.__component == "layout.personenraster" %}
             {%- from "components/Personenraster.njk" import Personenraster -%}
             {{ Personenraster({people: item.Personeneintrag}) }}
