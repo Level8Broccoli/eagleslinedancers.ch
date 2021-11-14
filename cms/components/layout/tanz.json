@@ -1,8 +1,9 @@
 {
   "collectionName": "components_layout_tanzs",
   "info": {
-    "name": "Tanz",
-    "icon": "compact-disc"
+    "name": "Tänze",
+    "icon": "compact-disc",
+    "description": ""
   },
   "options": {},
   "attributes": {
