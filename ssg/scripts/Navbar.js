@@ -1,26 +1,40 @@
 "use strict";
 
-document.addEventListener('DOMContentLoaded', () => {
-    // Get all "navbar-burger" elements
-    const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+document.addEventListener("DOMContentLoaded", () => {
+  const $navbarBurgers = Array.prototype.slice.call(
+    document.querySelectorAll(".navbar-burger"),
+    0
+  );
+  if ($navbarBurgers.length > 0) {
+    $navbarBurgers.forEach((el) => {
+      el.addEventListener("click", () => {
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+        el.classList.toggle("is-active");
+        $target.classList.toggle("is-active");
+      });
+    });
+  }
 
-    // Check if there are any navbar burgers
-    if ($navbarBurgers.length > 0) {
-
-        // Add a click event on each of them
-        $navbarBurgers.forEach(el => {
-            el.addEventListener('click', () => {
-
-                // Get the target from the "data-target" attribute
-                const target = el.dataset.target;
-                const $target = document.getElementById(target);
-
-                // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
-                el.classList.toggle('is-active');
-                $target.classList.toggle('is-active');
-
-            });
+  const $navbarDropdowns = Array.prototype.slice.call(
+    document.querySelectorAll(".navbar-item.has-dropdown"),
+    0
+  );
+  if ($navbarDropdowns.length > 0) {
+    $navbarDropdowns.forEach((el) => {
+      el.addEventListener("click", (event) => {
+        event.stopPropagation();
+        $navbarDropdowns.forEach((e) => {
+          e.classList.remove("is-active");
         });
-    }
-
+        el.classList.toggle("is-active");
+      });
+    });
+  }
+  const $body = document.querySelector("body");
+  $body.addEventListener("click", () => {
+    $navbarDropdowns.forEach((e) => {
+      e.classList.remove("is-active");
+    });
+  });
 });
