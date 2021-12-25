@@ -16,7 +16,7 @@ module.exports = function (eleventyConfig) {
     (src, alt, width, height, sizes = "100vw") => {
       let opts = {
         widths: [width],
-        formats: ["webp", "jpeg"],
+        formats: ["jpeg"],
         outputDir: "./_site/img/",
       };
       Image(src, opts);
