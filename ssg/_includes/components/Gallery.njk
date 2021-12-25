@@ -1,8 +1,9 @@
 {% macro Gallery(params) %}
     <div class="picture-grid">
         {% for image in params.images %}
-            {% image "https://admin.eagleslinedancers.ch" + image.url,
-                image.alternativeText, image.width, image.height %}
+            <figure class="image">
+                <img alt="{{image.name}}" src="https://admin.eagleslinedancers.ch{{image.url}}" loading="lazy" decoding="async" width="{{image.width}}" height="{{image.height}}"/>
+            </figure>
         {% endfor %}
     </div>
 {% endmacro %}
