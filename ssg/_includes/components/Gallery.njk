@@ -1,11 +1,8 @@
 {% macro Gallery(params) %}
-    <div class="columns is-multiline">
-        {% for image in params.images%}
-            <div class="column is-one-third">
-                <figure class="image">
-                    <img alt="{{image.name}}" src="https://admin.eagleslinedancers.ch{{image.url}}">
-                </figure>
-            </div>
+    <div class="picture-grid">
+        {% for image in params.images %}
+            {% image "https://admin.eagleslinedancers.ch" + image.url,
+                image.alternativeText, image.width, image.height %}
         {% endfor %}
     </div>
 {% endmacro %}

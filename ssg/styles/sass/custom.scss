@@ -41,3 +41,19 @@ img.ea-brand-logo {
 iframe {
   max-width: 100%;
 }
+
+.picture-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(250px, 100%), 1fr));
+
+  img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+  }
+}
+
+.content {
+  max-width: 60ch;
+}
