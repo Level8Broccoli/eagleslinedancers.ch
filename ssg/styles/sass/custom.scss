@@ -57,3 +57,7 @@ iframe {
 .content > * {
   max-width: 60ch;
 }
+
+.content:not(:first-child) {
+	margin-top: 2.5rem;
+}
