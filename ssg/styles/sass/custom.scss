@@ -54,12 +54,22 @@ iframe {
   }
 }
 
+.object-fit-cover {
+  object-fit: cover;
+  aspect-ratio: 1;
+}
+
+.is-155x155 {
+  height: 155px;
+  width: 155px;
+}
+
 .content > * {
   max-width: 60ch;
 }
 
 .content:not(:first-child) {
-	margin-top: 2.5rem;
+  margin-top: 2.5rem;
 }
 
 .aside img {

@@ -3,8 +3,8 @@
         {% for person in params.people %}
             <div class="column is-one-third">
                 <div class="block has-text-centered">
-                    <figure class="image">
-                        <img src="https://admin.eagleslinedancers.ch{{person.Portrait.url}}">
+                    <figure class="image is-155x155 mx-auto">
+                        <img class="is-rounded object-fit-cover" src="https://admin.eagleslinedancers.ch{{person.Portrait.url}}">
                     </figure>
                     <div class="subtitle">
                         <span class="has-text-primary">{{ person.Name }}</span>

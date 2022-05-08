@@ -12,9 +12,7 @@
         {% elif item.__component == "interaktion.download" %}
             <a class="button is-primary" href="https://admin.eagleslinedancers.ch{{item.Dokument.url}}">{{item.Name}}</a>
         {% elif item.__component == "medien.bild" %}
-            <figure class="image">
-                <img alt="item.Bild.name" src="https://admin.eagleslinedancers.ch{{item.Bild.url}}">
-            </figure>
+            <img alt="item.Bild.name" src="https://admin.eagleslinedancers.ch{{item.Bild.url}}">
         {% elif item.__component == "medien.galerie" %}
             {%- from "components/Gallery.njk" import Gallery -%}
             {{ Gallery({images: item.Galerie}) }}
