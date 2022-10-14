@@ -1,25 +1,25 @@
 {% macro Form(params) %}
-    <form data-netlify="true" action="/{{params.forwarding.Permalink}}/" name="Kontaktformular" method="POST">
+    <form data-netlify="true" action="/{{ params.forwarding.Permalink }}/" name="Kontaktformular" method="POST">
         {% for field in params.fields %}
             {% if field.Feldart == "Text" %}
                 <div class="field">
-                    <label class="label">{{field.Beschriftung}}</label>
+                    <label class="label">{{ field.Beschriftung }}</label>
                     <div class="control">
-                        <input name="{{field.Beschriftung}}" class="input" type="text" required/>
+                        <input name="{{ field.Beschriftung }}" class="input" type="text" required/>
                     </div>
                 </div>
             {% elif field.Feldart == "Email" %}
                 <div class="field">
-                    <label class="label">{{field.Beschriftung}}</label>
+                    <label class="label">{{ field.Beschriftung }}</label>
                     <div class="control">
-                        <input name="{{field.Beschriftung}}" class="input" type="email" required/>
+                        <input name="{{ field.Beschriftung }}" class="input" type="email" required/>
                     </div>
                 </div>
             {% elif field.Feldart == "Textblock" %}
                 <div class="field">
-                    <label class="label">{{field.Beschriftung}}</label>
+                    <label class="label">{{ field.Beschriftung }}</label>
                     <div class="control">
-                        <textarea name="{{field.Beschriftung}}" class="textarea" required></textarea>
+                        <textarea name="{{ field.Beschriftung }}" class="textarea" required></textarea>
                     </div>
                 </div>
             {% endif %}

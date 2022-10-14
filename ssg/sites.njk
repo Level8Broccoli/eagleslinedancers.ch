@@ -6,13 +6,13 @@
         size: 1,
         alias: "seite",
     },
-    permalink: "{{seite.Permalink | slug}}/",
+    permalink: "{{ seite.Permalink | slug }}/",
     eleventyComputed: {
-        title: "{{seite.Titel}}"
+        title: "{{ seite.Titel }}"
     }
 }
 ---
-<h1 class="title is-2">{{seite.Titel}}</h1>
+<h1 class="title is-2">{{ seite.Titel }}</h1>
 {% if seite.Seitenspalte.length > 0 %}
     <div class="columns">
         <div class="column is-two-thirds">

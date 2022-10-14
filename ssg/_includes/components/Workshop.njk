@@ -17,12 +17,12 @@
                     {% for cell in row.Tabellenzellen %}
                         <tr>
                             {% if loop.first %}
-                                <td rowspan="{{row.Tabellenzellen.length}}" style="vertical-align: middle;">
-                                    <h6 class="title is-6">{{row.Zeilentitel}}</h6>
+                                <td rowspan="{{ row.Tabellenzellen.length }}" style="vertical-align: middle;">
+                                    <h6 class="title is-6">{{ row.Zeilentitel }}</h6>
                                 </td>
                             {% endif %}
                             <td>
-                                <p>{{cell.Tabellenzeile}}</p>
+                                <p>{{ cell.Tabellenzeile }}</p>
                             </td>
                         </tr>
                     {% endfor %}
