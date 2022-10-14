@@ -6,7 +6,8 @@ RUN apk add --update --no-cache\
     nodejs\
     yarn\
     curl\
-    openssh
+    openssh\
+    grep
 
 WORKDIR /srv/app
 

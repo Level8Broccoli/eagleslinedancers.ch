@@ -1,29 +1,52 @@
 #!/usr/bin/env sh
 
 TEMP_FOLDER="/tmp"
+DATA_FOLDER="ssg/_data/"
+IMG_FOLDER="ssg/public/images"
+IMG_FILE="img.txt"
 GIT_NAME="eagleslinedancers.ch"
+CMS_URL="http://localhost:1337"
 TYPES="seiten startseite fussnavigation hauptnavigation"
 
-cd $TEMP_FOLDER
+cd ${TEMP_FOLDER}
 
-if [ -d $GIT_NAME ]
+if [ -d ${GIT_NAME} ]
 then
-  rm -R $GIT_NAME
+  rm -R ${GIT_NAME}
+fi
+
+if [ -f ${IMG_FILE} ]
+then
+  rm -R ${IMG_FILE}
 fi
 
 git clone git@github.com:Level8Broccoli/${GIT_NAME}.git
 
-if [ -d $GIT_NAME ]
+if [ -d ${GIT_NAME} ]
 then
-  cd $GIT_NAME
+  cd ${GIT_NAME}
 
-  for TYPE in $TYPES
+  for TYPE in ${TYPES}
   do
     curl \
       -X GET \
       -H "Content-Type: application/json" \
-      -o ./ssg/_data/$TYPE.json \
-      http://localhost:1337/$TYPE
+      -o ./${DATA_FOLDER}${TYPE}.json \
+      ${CMS_URL}/${TYPE}
+
+    grep \
+      -oP \
+      '(?<="url":").+?(?=")' \
+      ./${DATA_FOLDER}${TYPE}.json \
+      >> ${TEMP_FOLDER}/${IMG_FILE}
+  done
+
+  cat ${TEMP_FOLDER}/${IMG_FILE} \
+    | awk '!/\/small_/ && !/\/medium_/ && !/\/large_/ && !/\/thumbnail_/' \
+    | while read url; do
+    curl ${CMS_URL}${url} \
+      --create-dirs \
+      -o ./${IMG_FOLDER}${url}
   done
 
   if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
