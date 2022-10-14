@@ -7,7 +7,8 @@ RUN apk add --update --no-cache\
     yarn\
     curl\
     openssh\
-    grep
+    grep\
+    wget
 
 WORKDIR /srv/app
 

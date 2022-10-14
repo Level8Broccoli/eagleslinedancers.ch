@@ -2,7 +2,7 @@
 
 TEMP_FOLDER="/tmp"
 DATA_FOLDER="ssg/_data/"
-IMG_FOLDER="ssg/public/images"
+IMG_FOLDER="ssg/public/images/uploads"
 IMG_FILE="img.txt"
 GIT_NAME="eagleslinedancers.ch"
 CMS_URL="http://localhost:1337"
@@ -26,6 +26,11 @@ if [ -d ${GIT_NAME} ]
 then
   cd ${GIT_NAME}
 
+  if [ -d ${IMG_FOLDER} ]
+  then
+    rm -R ${IMG_FOLDER}
+  fi
+
   for TYPE in ${TYPES}
   do
     curl \
@@ -33,21 +38,19 @@ then
       -H "Content-Type: application/json" \
       -o ./${DATA_FOLDER}${TYPE}.json \
       ${CMS_URL}/${TYPE}
-
     grep \
       -oP \
       '(?<="url":").+?(?=")' \
       ./${DATA_FOLDER}${TYPE}.json \
+      | awk '!/\/small_/ && !/\/medium_/ && !/\/large_/ && !/\/thumbnail_/' \
       >> ${TEMP_FOLDER}/${IMG_FILE}
   done
 
-  cat ${TEMP_FOLDER}/${IMG_FILE} \
-    | awk '!/\/small_/ && !/\/medium_/ && !/\/large_/ && !/\/thumbnail_/' \
-    | while read url; do
-    curl ${CMS_URL}${url} \
-      --create-dirs \
-      -o ./${IMG_FOLDER}${url}
-  done
+  sed -i -e "s/^/$(printf '%s\n' "${CMS_URL}" | sed -e 's/[\/&]/\\&/g')/" ${TEMP_FOLDER}/${IMG_FILE}
+
+  wget \
+    -i ${TEMP_FOLDER}/${IMG_FILE} \
+    -P ./${IMG_FOLDER}
 
   if [ ! $(git diff --quiet) ] || [ ! $(git diff --staged --quiet) ]
   then
