@@ -5,6 +5,7 @@ services:
     build: .
     ports:
     - "3333:1337"
+    restart: always
     volumes:
     - /data/eagleslinedancers/db:/srv/app/.tmp
     - /data/eagleslinedancers/public/uploads:/srv/app/public/uploads
