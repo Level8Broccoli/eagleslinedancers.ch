@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
       - name: Create Key
         shell: bash
         run: |
@@ -16,7 +16,7 @@ jobs:
           chmod 600 ./cms/id_rsa
           echo "${{ secrets.DEPLOY_KNOWN_HOSTS }}" > ./cms/ssh_known_hosts
       - name: Docker Deploy
-        uses: wshihadeh/docker-deployment-action@v2
+        uses: wshihadeh/docker-deployment-action@v3
         with:
           remote_docker_host: ${{ secrets.DOCKER_HOST }}
           ssh_private_key: ${{ secrets.DOCKER_SSH_PRIVATE_KEY }}
