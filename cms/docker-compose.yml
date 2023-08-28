@@ -9,3 +9,8 @@ services:
     volumes:
     - /data/eagleslinedancers/db:/srv/app/.tmp
     - /data/eagleslinedancers/public/uploads:/srv/app/public/uploads
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+
