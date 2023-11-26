@@ -1,0 +1,14 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+<div class="ea-startpage-title">
+  <section class="section">
+      <div class="container">
+          <h2 class="title is-1 has-text-primary">{ title }</h2>
+      </section>
+  </div>
+</div>
