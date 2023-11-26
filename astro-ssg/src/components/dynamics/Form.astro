@@ -7,15 +7,25 @@ interface Props {
 const { fields, forwarding } = Astro.props;
 ---
 
-<form data-netlify="true" action={ `/${ forwarding.Permalink }` } name="Kontaktformular" method="POST">
-  { 
+<form
+  data-netlify="true"
+  action={`/${forwarding.Permalink}`}
+  name="Kontaktformular"
+  method="POST"
+>
+  {
     fields.map((field: any) => {
       if (field.Feldart === "Text") {
         return (
           <div class="field">
-            <label class="label">{ field.Beschriftung }</label>
+            <label class="label">{field.Beschriftung}</label>
             <div class="control">
-              <input name={ field.Beschriftung } class="input" type="text" required/>
+              <input
+                name={field.Beschriftung}
+                class="input"
+                type="text"
+                required
+              />
             </div>
           </div>
         );
@@ -24,9 +34,14 @@ const { fields, forwarding } = Astro.props;
       if (field.Feldart == "Email") {
         return (
           <div class="field">
-            <label class="label">{ field.Beschriftung }</label>
+            <label class="label">{field.Beschriftung}</label>
             <div class="control">
-              <input name={ field.Beschriftung } class="input" type="email" required/>
+              <input
+                name={field.Beschriftung}
+                class="input"
+                type="email"
+                required
+              />
             </div>
           </div>
         );
@@ -35,9 +50,9 @@ const { fields, forwarding } = Astro.props;
       if (field.Feldart == "Textblock") {
         return (
           <div class="field">
-            <label class="label">{ field.Beschriftung }</label>
+            <label class="label">{field.Beschriftung}</label>
             <div class="control">
-              <textarea name={ field.Beschriftung } class="textarea" required></textarea>
+              <textarea name={field.Beschriftung} class="textarea" required />
             </div>
           </div>
         );

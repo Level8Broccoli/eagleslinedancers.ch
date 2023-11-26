@@ -11,7 +11,7 @@ const { people } = Astro.props;
 <div class="columns is-multiline">
 {
   people.map((person: any) => {
-    const image = import(/* @vite-ignore */ "../../_data/".concat(person.Portrait.url));
+    const image = import(/* @vite-ignore */ "../../_data".concat(person.Portrait.url));
 
     return (
       <div class="column is-one-third">

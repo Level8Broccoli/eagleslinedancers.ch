@@ -1,16 +1,17 @@
 ---
 import hauptNavigation from "../../_data/hauptnavigation.json";
 
-const mainNavigation: any[] = hauptNavigation.Navigationspunkte
-  .map((item: any) => {
-  if (item.__component === "navigation.seiten") {
-    return {
-      ...item,
-      Seiten: item.Seiten.filter((s: any) => "Permalink" in s.Seite),
-    };
-  }
-  return item;
-}).filter((item: any) => {
+const mainNavigation: any[] = hauptNavigation.Navigationspunkte.map(
+  (item: any) => {
+    if (item.__component === "navigation.seiten") {
+      return {
+        ...item,
+        Seiten: item.Seiten.filter((s: any) => "Permalink" in s.Seite),
+      };
+    }
+    return item;
+  },
+).filter((item: any) => {
   if (item.__component === "navigation.seite") {
     return "Permalink" in item.Seite;
   } else if (item.__component === "navigation.seiten") {

@@ -4,7 +4,7 @@ import Layout from "../layouts/Layout.astro";
 import DynamicZone from "../components/DynamicZone.astro";
 
 export function getStaticPaths() {
-  return seiten.map(seite => {
+  return seiten.map((seite: any) => {
     return {
       params: {
         slug: seite.Permalink
@@ -15,7 +15,10 @@ export function getStaticPaths() {
 
 const { slug } = Astro.params;
 
-const seite = seiten.find(seite => seite.Permalink === slug);
+const seite = seiten.find((seite: any) => seite.Permalink === slug);
+if (seite === undefined) {
+  throw new Error("Seite not found: ".concat(slug));
+}
 ---
 
 <Layout title={ seite.Titel }> 

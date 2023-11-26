@@ -1,0 +1,43 @@
+---
+interface Props {
+  dates: any[];
+  dances: any[];
+}
+
+const { dates, dances } = Astro.props;
+---
+
+<div class="table-container">
+  <table class="table is-hoverable">
+    <thead>
+      <tr>
+        {
+          dates.map((date: any) => {
+            return (
+              <th>
+                <h4 class="title is-4">{date.Datum}</h4>
+              </th>
+            );
+          })
+        }
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        dances.map((dance: any) => {
+          return (
+            <tr>
+              <td>
+                <h5 class="title is-5">{dance.Tanz}</h5>
+              </td>
+              {dates.map(() => {
+                return <td />;
+              })}
+            </tr>
+          );
+        })
+      }
+    </tbody>
+  </table>
+</div>
