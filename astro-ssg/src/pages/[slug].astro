@@ -1,0 +1,44 @@
+---
+import seiten from "../_data/seiten.json";
+import Layout from "../layouts/Layout.astro";
+import DynamicZone from "../components/DynamicZone.astro";
+
+export function getStaticPaths() {
+  return seiten.map(seite => {
+    return {
+      params: {
+        slug: seite.Permalink
+      }
+    };
+  });
+}
+
+const { slug } = Astro.params;
+
+const seite = seiten.find(seite => seite.Permalink === slug);
+---
+
+<Layout title={ seite.Titel }> 
+  <section class="section">
+    <div class="container">
+      <h1 class="title is-2">{ seite.Titel }</h1>
+      {
+        (seite.Seitenspalte.length > 0) ? (
+          <div class="columns">
+            <div class="column is-two-thirds">
+              <DynamicZone items={ seite.Inhalt } />
+            </div>
+            <div class="column aside">
+              <div class="box">
+                <DynamicZone items={ seite.Seitenspalte } />
+              </div>
+            </div>
+          </div>
+        ) : (
+          <DynamicZone items={ seite.Inhalt } />
+        )
+      }
+    </div>
+  </section>
+</Layout>
+
