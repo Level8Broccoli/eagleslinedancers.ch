@@ -1,8 +1,8 @@
 #!/usr/bin/env sh
 
 TEMP_FOLDER="/tmp"
-DATA_FOLDER="ssg/_data/"
-IMG_FOLDER="ssg/public/images/uploads"
+DATA_FOLDER="astro-ssg/src/_data/"
+IMG_FOLDER="astro-ssg/public/images/uploads"
 IMG_FILE="img.txt"
 GIT_NAME="eagleslinedancers.ch"
 CMS_URL="http://localhost:1337"
