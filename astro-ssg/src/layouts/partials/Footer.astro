@@ -1,0 +1,24 @@
+---
+const secondNavigation = [];
+---
+
+<section class="hero is-primary">
+    <div class="hero-body">
+        <footer>
+            <div class="container">
+                <div class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap">
+                    <div class="left">
+                      {secondNavigation.map(item => {
+                        if (item.__component === "navigation.startseite") {
+                           return <a class="button is-primary" href="/">{ item.Beschriftung }</a>;
+                        } else {
+                           return <a class="button is-primary" href="/{ item.Seite.Permalink | slug }/">{ item.Beschriftung }</a>;
+                        }
+                      })}
+                    </div>
+                    <div class="right"> &copy;2022 EAGLESLINEDANCERS – Eimatt 16, 6372 Ennetmoos</div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</section>

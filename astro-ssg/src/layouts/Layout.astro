@@ -1,5 +1,7 @@
 ---
-import Icons from "../components/Icons.astro";
+import Icons from "./partials/Icons.astro";
+import Footer from "./partials/Footer.astro";
+import "../styles/main.scss";
 
 interface Props {
 	title?: string;
@@ -15,8 +17,17 @@ const { title } = Astro.props;
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>{title !== undefined ? title + " | " : "" }Eagles Line Dancers</title>
 		<Icons />
+		<!-- TODO Navbar script -->
 	</head>
 	<body>
-		<slot />
+		<header>
+			<!-- TODO navbar component -->
+		</header>
+		<main class="has-background-white">
+			<slot />
+		</main>
+		<footer>
+			<Footer/>
+		</footer>
 	</body>
 </html>
