@@ -17,7 +17,7 @@ const { items } = Astro.props;
 ---
 
 {
-  items.map((item) => {
+  items.map((item: any) => {
     switch (item.__component) {
       case "text.formattierter-text":
         return <FormattierterText content={item.FormattierterText} />;
@@ -43,14 +43,7 @@ const { items } = Astro.props;
         );
 
       case "medien.bild":
-        return (
-          <Bild
-            src={item.Bild.url}
-            alt={item.Bild.name}
-            width={item.Bild.width}
-            height={item.Bild.height}
-          />
-        );
+        return <Bild src={item.Bild.url} alt={item.Bild.name} />;
 
       case "medien.galerie":
         return <Gallery images={item.Galerie} />;

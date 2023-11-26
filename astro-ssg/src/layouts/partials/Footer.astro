@@ -1,51 +1,50 @@
 ---
 import fussNavigation from "../../_data/fussnavigation.json";
 
-const secondNavigation: any[] = fussNavigation.Navigationspunkte
-    .filter((item: any) => {
-        if (item.__component === "navigation.seite") {
-            return "Permalink" in item.Seite;
-        }
-        return true;
-    });
+const secondNavigation: any[] = fussNavigation.Navigationspunkte.filter(
+  (item: any) => {
+    if (item.__component === "navigation.seite") {
+      return "Permalink" in item.Seite;
+    }
+    return true;
+  },
+);
 ---
 
 <section class="hero is-primary">
-    <div class="hero-body">
-        <footer>
-            <div class="container">
-                <div
-                    class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap"
-                >
-                    <div class="left">
-                        {
-                            secondNavigation.map((item: any) => {
-                                if (
-                                    item.__component === "navigation.startseite"
-                                ) {
-                                    return (
-                                        <a class="button is-primary" href="/">
-                                            {item.Beschriftung}
-                                        </a>
-                                    );
-                                } else {
-                                    return (
-                                        <a
-                                            class="button is-primary"
-                                            href=`/${ item.Seite.Permalink }/`
-                                        >
-                                            {item.Beschriftung}
-                                        </a>
-                                    );
-                                }
-                            })
-                        }
-                    </div>
-                    <div class="right">
-                        &copy;2023 EAGLESLINEDANCERS – Eimatt 16, 6372 Ennetmoos
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </div>
+  <div class="hero-body">
+    <footer>
+      <div class="container">
+        <div
+          class="is-flex is-justify-content-space-between is-align-items-center is-flex-wrap-wrap"
+        >
+          <div class="left">
+            {
+              secondNavigation.map((item: any) => {
+                if (item.__component === "navigation.startseite") {
+                  return (
+                    <a class="button is-primary" href="/">
+                      {item.Beschriftung}
+                    </a>
+                  );
+                } else {
+                  return (
+                    <a
+                      class="button is-primary"
+                      href={`/${item.Seite.Permalink}/`}
+                    >
+                      {item.Beschriftung}
+                    </a>
+                  );
+                }
+              })
+            }
+          </div>
+          <div class="right">
+            &copy;2023 EAGLESLINEDANCERS – Eimatt 16, 6372 Ennetmoos
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </section>

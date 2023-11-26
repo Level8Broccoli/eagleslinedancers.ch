@@ -13,12 +13,7 @@ const { images } = Astro.props;
     images.map((image: any) => {
       return (
         <figure class="image">
-          <Bild
-            src={image.url}
-            alt={image.name}
-            height={image.height}
-            width={image.width}
-          />
+          <Bild src={image.url} alt={image.name} />
         </figure>
       );
     })
