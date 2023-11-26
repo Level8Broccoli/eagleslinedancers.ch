@@ -1,0 +1,2 @@
+- Change CD skript
+- non-images (e.g. downloads, pdfs) don't work anymore
