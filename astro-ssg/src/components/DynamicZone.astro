@@ -1,5 +1,9 @@
 ---
 import FormattierterText from "./dynamics/FormattierterText.astro";
+import AbschnittsTitel from "./dynamics/AbschnittsTitel.astro";
+import Button from "./dynamics/Button.astro";
+import Form from "./dynamics/Form.astro";
+import Bild from "./dynamics/Bild.astro";
 
 interface Props {
   items: any[];  
@@ -11,13 +15,33 @@ const { items } = Astro.props;
 {
   items.map(item => {
     switch(item.__component) {
+
       case "text.formattierter-text":
         return <FormattierterText content={ item.FormattierterText } />;
+
+      case "text.abschnittstitel": 
+        return <AbschnittsTitel title={ item.Abschnittstitel } line={ item.Linie } />;
+
       case "interaktion.seitenlink":
-        return <a class="button is-primary" href={`/${ item.Seite.Permalink }`}>{ item.Beschriftung }</a>
+        return <Button href={ `/${ item.Seite.Permalink }`} label={ item.Beschriftung } />;
+
+      case "interaktion.download": 
+        return <Button href={ `/images${ item.Dokument.url }` } label={ item.Name } />;
+
+      case "interaktion.kontaktformular":
+        return <Form fields={ item.Formularfeld } forwarding={ item.Weiterleitung } />;
+
+      case "medien.bild":
+        return <Bild src={ item.Bild.url } alt={ item.Bild.name } width={ item.Bild.width } height={ item.Bild.height } />;
+
+      case "medien.galerie":
+      case "layout.personenraster":
+      case "layout.monatstanz":
+      case "layout.workshop": 
+
       default: 
         console.log(item.__component);
-        return <h2>Fallback</h2>;
-    }
+        return <h2>{ item.__component }</h2>;
+    };
   })
 }

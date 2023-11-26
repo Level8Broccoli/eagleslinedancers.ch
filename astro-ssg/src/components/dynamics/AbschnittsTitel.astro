@@ -1,0 +1,12 @@
+---
+interface Props {
+  title: string;
+  line?: boolean;
+}
+
+const { title, line } = Astro.props;
+---
+
+<h2 class=`title is-4 ${ line === true ? "ea-title-line" : "" }`>
+  <span>{ title }</span>
+</h2>

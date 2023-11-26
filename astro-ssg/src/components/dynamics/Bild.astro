@@ -1,0 +1,23 @@
+---
+import { Image } from "astro:assets";
+
+
+interface Props {
+  src: string;
+  alt: string;
+  width: number;
+  height: number;
+}
+
+const { src, alt, width, height } = Astro.props;
+const image = import(/* @vite-ignore */ "../../_data".concat(src));
+---
+
+<Image 
+  src={ image } 
+  alt={ alt } 
+  width={ width }
+  height={ height }
+  widths={ [300, 600, 1200] }
+  sizes={ `(max-width: 300px) 300px, (max-width: 600px) 600px, (max-width: 1200px) 1200px, ${ width }px` }
+  />

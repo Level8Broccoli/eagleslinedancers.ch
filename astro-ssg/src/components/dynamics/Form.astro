@@ -1,0 +1,52 @@
+---
+interface Props {
+  fields: any;
+  forwarding: any;
+}
+
+const { fields, forwarding } = Astro.props;
+---
+
+<form data-netlify="true" action={ `/${ forwarding.Permalink }` } name="Kontaktformular" method="POST">
+  { 
+    fields.map((field: any) => {
+      if (field.Feldart === "Text") {
+        return (
+          <div class="field">
+            <label class="label">{ field.Beschriftung }</label>
+            <div class="control">
+              <input name={ field.Beschriftung } class="input" type="text" required/>
+            </div>
+          </div>
+        );
+      }
+
+      if (field.Feldart == "Email") {
+        return (
+          <div class="field">
+            <label class="label">{ field.Beschriftung }</label>
+            <div class="control">
+              <input name={ field.Beschriftung } class="input" type="email" required/>
+            </div>
+          </div>
+        );
+      }
+
+      if (field.Feldart == "Textblock") {
+        return (
+          <div class="field">
+            <label class="label">{ field.Beschriftung }</label>
+            <div class="control">
+              <textarea name={ field.Beschriftung } class="textarea" required></textarea>
+            </div>
+          </div>
+        );
+      }
+    })
+  }
+  <div class="field is-grouped">
+    <div class="control">
+      <button class="button is-primary" type="submit">Nachricht senden</button>
+    </div>
+  </div>
+</form>
