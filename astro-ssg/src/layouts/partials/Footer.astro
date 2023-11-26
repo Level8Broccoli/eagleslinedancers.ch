@@ -1,5 +1,13 @@
 ---
-const secondNavigation = [];
+import fussNavigation from "../../_data/fussnavigation.json";
+
+const secondNavigation = fussNavigation.Navigationspunkte
+    .filter(item => {
+        if (item.__component === "navigation.seite") {
+            return "Permalink" in item.Seite;
+        }
+        return true;
+    });
 ---
 
 <section class="hero is-primary">
@@ -24,7 +32,7 @@ const secondNavigation = [];
                                     return (
                                         <a
                                             class="button is-primary"
-                                            href="/{ item.Seite.Permalink | slug }/"
+                                            href=`/${ item.Seite.Permalink }/`
                                         >
                                             {item.Beschriftung}
                                         </a>

@@ -1,5 +1,23 @@
 ---
-const mainNavigation = [];
+import hauptNavigation from "../../_data/hauptnavigation.json";
+
+const mainNavigation = hauptNavigation.Navigationspunkte.map(item => {
+  if (item.__component === "navigation.seiten") {
+    return {
+      ...item,
+      Seiten: item.Seiten.filter(s => "Permalink" in s.Seite)    
+    };
+  }
+  return item;
+})
+  .filter(item => {
+    if (item.__component === "navigation.seite") {
+      return "Permalink" in item.Seite;
+    } else if (item.__component === "navigation.seiten") {
+      return item.Seiten.length > 0;
+    }
+    return true;
+  });
 ---
 
 <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
@@ -44,20 +62,21 @@ const mainNavigation = [];
                   <a class="navbar-link">{item.Beschriftung}</a>
                   <div class="navbar-dropdown">
                     {item.Seiten.map((subItem) => {
-                      return;
-                      <a
-                        class="navbar-item"
-                        href="/{ subItem.Seite.Permalink | slug }/"
-                      >
-                        {subItem.Beschriftung}
-                      </a>;
+                      return (
+                        <a
+                          class="navbar-item"
+                          href={`/${ subItem.Seite.Permalink }/`}
+                        >
+                          {subItem.Beschriftung}
+                        </a>
+                      );
                     })}
                   </div>
                 </div>
               );
             } else if (item.__component === "navigation.seite") {
               return (
-                <a class="navbar-item" href="/{ item.Seite.Permalink | slug }/">
+                <a class="navbar-item" href={`/${ item.Seite.Permalink }/`}>           
                   {item.Beschriftung}
                 </a>
               );
