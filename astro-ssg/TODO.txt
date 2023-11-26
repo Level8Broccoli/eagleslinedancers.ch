@@ -1,2 +1,3 @@
 - Change CD skript
 - non-images (e.g. downloads, pdfs) don't work anymore
+- If possible change the glob import to only select image files
