@@ -2,7 +2,7 @@
 import FormattierterText from "./dynamics/FormattierterText.astro";
 
 interface Props {
-  items: [];  
+  items: any[];  
 }
 
 const { items } = Astro.props;
@@ -10,9 +10,14 @@ const { items } = Astro.props;
 
 {
   items.map(item => {
-    if (item.__component === "text.formattierter-text") {
-      return <FormattierterText content={ item.FormattierterText } />;
+    switch(item.__component) {
+      case "text.formattierter-text":
+        return <FormattierterText content={ item.FormattierterText } />;
+      case "interaktion.seitenlink":
+        return <a class="button is-primary" href={`/${ item.Seite.Permalink }`}>{ item.Beschriftung }</a>
+      default: 
+        console.log(item.__component);
+        return <h2>Fallback</h2>;
     }
-    return <h2>Fallback</h2>;
   })
 }

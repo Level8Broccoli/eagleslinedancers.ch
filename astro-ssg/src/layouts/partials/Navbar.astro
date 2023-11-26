@@ -1,15 +1,16 @@
 ---
 import hauptNavigation from "../../_data/hauptnavigation.json";
 
-const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
+const mainNavigation: any[] = hauptNavigation.Navigationspunkte
+  .map((item: any) => {
   if (item.__component === "navigation.seiten") {
     return {
       ...item,
-      Seiten: item.Seiten.filter((s) => "Permalink" in s.Seite),
+      Seiten: item.Seiten.filter((s: any) => "Permalink" in s.Seite),
     };
   }
   return item;
-}).filter((item) => {
+}).filter((item: any) => {
   if (item.__component === "navigation.seite") {
     return "Permalink" in item.Seite;
   } else if (item.__component === "navigation.seiten") {
@@ -48,7 +49,7 @@ const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
     <div id="navbarMain" class="navbar-menu">
       <div class="navbar-start">
         {
-          mainNavigation.map((item) => {
+          mainNavigation.map((item: any) => {
             if (item.__component === "navigation.startseite") {
               return (
                 <a class="navbar-item" href="/">
@@ -60,7 +61,7 @@ const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
                 <div class="navbar-item has-dropdown is-hoverable">
                   <a class="navbar-link">{item.Beschriftung}</a>
                   <div class="navbar-dropdown">
-                    {item.Seiten.map((subItem) => {
+                    {item.Seiten.map((subItem: any) => {
                       return (
                         <a
                           class="navbar-item"
@@ -102,7 +103,7 @@ const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
           const target = el.dataset.target;
           const $target = document.getElementById(target);
           el.classList.toggle("is-active");
-          $target.classList.toggle("is-active");
+          $target?.classList.toggle("is-active");
         });
       });
     }
@@ -113,7 +114,7 @@ const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
     );
     if ($navbarDropdowns.length > 0) {
       $navbarDropdowns.forEach((el) => {
-        el.addEventListener("click", (event) => {
+        el.addEventListener("click", (event: Event) => {
           event.stopPropagation();
           $navbarDropdowns.forEach((e) => {
             e.classList.remove("is-active");
@@ -123,7 +124,7 @@ const mainNavigation = hauptNavigation.Navigationspunkte.map((item) => {
       });
     }
     const $body = document.querySelector("body");
-    $body.addEventListener("click", () => {
+    $body?.addEventListener("click", () => {
       $navbarDropdowns.forEach((e) => {
         e.classList.remove("is-active");
       });

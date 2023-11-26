@@ -1,8 +1,8 @@
 ---
 import fussNavigation from "../../_data/fussnavigation.json";
 
-const secondNavigation = fussNavigation.Navigationspunkte
-    .filter(item => {
+const secondNavigation: any[] = fussNavigation.Navigationspunkte
+    .filter((item: any) => {
         if (item.__component === "navigation.seite") {
             return "Permalink" in item.Seite;
         }
@@ -19,7 +19,7 @@ const secondNavigation = fussNavigation.Navigationspunkte
                 >
                     <div class="left">
                         {
-                            secondNavigation.map((item) => {
+                            secondNavigation.map((item: any) => {
                                 if (
                                     item.__component === "navigation.startseite"
                                 ) {
