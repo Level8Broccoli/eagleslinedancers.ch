@@ -1,0 +1,36 @@
+---
+import { Image } from "astro:assets";
+
+interface Props {
+  people: any[];
+}
+
+const { people } = Astro.props;
+---
+
+<div class="columns is-multiline">
+{
+  people.map((person: any) => {
+    const image = import(/* @vite-ignore */ "../../_data/".concat(person.Portrait.url));
+
+    return (
+      <div class="column is-one-third">
+        <div class="block has-text-centered">
+          <figure class="image is-155x155 mx-auto">
+            <Image 
+              src={ image } 
+              alt=`${ person.Name }, ${ person.Funktion }`
+              class="is-rounded object-fit-cover"              
+              />
+          </figure>
+          <div class="subtitle">
+            <span class="has-text-primary">{ person.Name }</span>
+            <br/>
+            <span class="has-text-grey">{ person.Funktion }</span>
+          </div>
+        </div>
+      </div>
+    );
+  })
+}
+</div>

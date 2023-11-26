@@ -4,6 +4,8 @@ import AbschnittsTitel from "./dynamics/AbschnittsTitel.astro";
 import Button from "./dynamics/Button.astro";
 import Form from "./dynamics/Form.astro";
 import Bild from "./dynamics/Bild.astro";
+import Gallery from "./dynamics/Gallery.astro";
+import Personenraster from "./dynamics/Personenraster.astro";
 
 interface Props {
   items: any[];  
@@ -35,7 +37,11 @@ const { items } = Astro.props;
         return <Bild src={ item.Bild.url } alt={ item.Bild.name } width={ item.Bild.width } height={ item.Bild.height } />;
 
       case "medien.galerie":
+        return <Gallery images={ item.Galerie } />;
+
       case "layout.personenraster":
+        return <Personenraster people={ item.Personeneintrag } />;
+
       case "layout.monatstanz":
       case "layout.workshop": 
 

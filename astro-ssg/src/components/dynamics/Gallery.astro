@@ -1,0 +1,21 @@
+---
+import Bild from "./Bild.astro";
+
+interface Props {
+  images: any[];
+}
+
+const { images } = Astro.props;
+---
+
+<div class="picture-grid">
+{
+  images.map((image: any) => {
+    return (
+      <figure class="image">
+        <Bild src={ image.url } alt={ image.name } height={ image.height } width={ image.width } />
+      </figure>
+    );
+  })
+}
+</div>
