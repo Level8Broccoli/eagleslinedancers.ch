@@ -14,6 +14,7 @@
     "@astrojs/check": "^0.3.1",
     "astro": "^3.6.0",
     "bulma": "^0.9.4",
+    "marked": "^10.0.0",
     "sass": "^1.69.5",
     "typescript": "^5.3.2"
   }

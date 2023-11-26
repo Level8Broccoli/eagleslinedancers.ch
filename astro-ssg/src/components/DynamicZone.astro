@@ -1,17 +1,17 @@
 ---
+import FormattierterText from "./dynamics/FormattierterText.astro";
+
 interface Props {
   items: [];  
 }
 
-
 const { items } = Astro.props;
-console.log({items});
 ---
 
 {
-  items?.map(item => {
+  items.map(item => {
     if (item.__component === "text.formattierter-text") {
-      return <h1>Formattierter Text</h1>;
+      return <FormattierterText content={ item.FormattierterText } />;
     }
     return <h2>Fallback</h2>;
   })

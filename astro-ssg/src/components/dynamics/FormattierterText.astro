@@ -1,0 +1,14 @@
+---
+import { marked } from "marked";
+
+interface Props {
+  content: string;
+}
+
+const markdown = marked
+  .parse(Astro.props.content)
+  .replace("a href", "a target='_blank' href");
+---
+
+<div class="content" set:html={ markdown}>
+</div>
