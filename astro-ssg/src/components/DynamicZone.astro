@@ -33,8 +33,9 @@ const { items } = Astro.props;
         );
 
       case "interaktion.download":
+        const url = item.Dokument.url.replace(/^.+\//, "");
         return (
-          <Button href={`/images${item.Dokument.url}`} label={item.Name} />
+          <Button href={`/_uploads/${url}`} label={item.Name} />
         );
 
       case "interaktion.kontaktformular":
