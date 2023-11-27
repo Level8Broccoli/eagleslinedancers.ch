@@ -10,6 +10,13 @@ CMS_URL="http://localhost:1337"
 TYPES="seiten startseite fussnavigation hauptnavigation"
 IMAGE_TYPES="JPG,jpg,jpeg,PNG,png,GIF,gif"
 
+# Decprecated (old SSG)
+
+DEPR_DATA_FOLDER="ssg/_data/"
+DEPR_IMG_FOLDER="ssg/public/images/uploads"
+
+# Deprecated /end
+
 cd ${TEMP_FOLDER}
 
 if [ -d ${GIT_NAME} ]
@@ -54,10 +61,30 @@ then
 
   printf "# README\n\nFolder gets filled by script. Don't touch manually." > ./${DATA_FOLDER}README.md
 
+  # Deprecated (old SSG)
+
+  if [ -d ${IMG_FOLDER} ]
+  then
+    rm -R ${IMG_FOLDER}
+  fi
+
+  # Deprecated /end
+  
   # Save all JSON files and paths to images and other files
   
   for TYPE in ${TYPES}
   do
+
+    # Deprecated (old SSG)
+
+    curl \
+      -X GET \
+      -H "Content-Type: application/json" \
+      -o ./${DEPR_DATA_FOLDER}${TYPE}.json \
+      ${CMS_URL}/${TYPE}
+    
+    # Deprecated /end
+
     curl \
       -X GET \
       -H "Content-Type: application/json" \
@@ -81,6 +108,14 @@ then
   wget \
     -i ${TEMP_FOLDER}/${DATA_URL_LIST_FILE} \
     -P ./${PUBLIC_FOLDER}
+
+  # Deprecated (old SSG)
+
+  wget \
+    -i ${TEMP_FOLDER}/${DATA_URL_LIST_FILE} \
+    -P ./${DEPR_IMG_FOLDER}
+
+  # Deprecated /end
 
   # Move the files accordingly
 
