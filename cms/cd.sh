@@ -3,12 +3,12 @@
 TEMP_FOLDER="/tmp"
 DATA_FOLDER="astro-ssg/src/_data/" # JSON files, content and structure from CMS
 ASSETS_FOLDER="astro-ssg/src/_assets/" # Image files, which get handled by SSG
-PUBLIC_FOLDER="astro-ssg/public/_uploads" # Everything else (e.g. PDF file for download)
+PUBLIC_FOLDER="astro-ssg/public/_uploads/" # Everything else (e.g. PDF file for download)
 DATA_URL_LIST_FILE="img.txt"
 GIT_NAME="eagleslinedancers.ch"
 CMS_URL="http://localhost:1337"
 TYPES="seiten startseite fussnavigation hauptnavigation"
-IMAGE_TYPES="JPG,jpg,jpeg,PNG,png,GIF,gif"
+IMAGE_TYPES="JPG jpg jpeg PNG png GIF gif"
 
 # Decprecated (old SSG)
 
@@ -63,9 +63,9 @@ then
 
   # Deprecated (old SSG)
 
-  if [ -d ${IMG_FOLDER} ]
+  if [ -d ${DEPR_IMG_FOLDER} ]
   then
-    rm -R ${IMG_FOLDER}
+    rm -R ${DEPR_IMG_FOLDER}
   fi
 
   # Deprecated /end
@@ -119,7 +119,11 @@ then
 
   # Move the files accordingly
 
-  mv ./${PUBLIC_FOLDER}/*.{${IMAGE_TYPES}} ./${ASSETS_FOLDER}/
+  for TYPE in ${IMAGE_TYPES}
+  do
+    mv ./${PUBLIC_FOLDER}*.${TYPE} ./${ASSETS_FOLDER}
+  done
+  
 
   # Check in the changes
 
