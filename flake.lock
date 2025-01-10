@@ -34,7 +34,7 @@
         "type": "github"
       }
     },
-    "nixpkgs-yarn": {
+    "nixpkgs-legacy": {
       "locked": {
         "lastModified": 1627786728,
         "narHash": "sha256-5AflgWBd1uRWoBIdMrvPYWw+l3QVPJZARO3TDxt7RGM=",
@@ -54,7 +54,7 @@
       "inputs": {
         "flake-utils": "flake-utils",
         "nixpkgs": "nixpkgs",
-        "nixpkgs-yarn": "nixpkgs-yarn"
+        "nixpkgs-legacy": "nixpkgs-legacy"
       }
     },
     "systems": {
