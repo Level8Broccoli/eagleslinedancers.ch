@@ -9,16 +9,16 @@
 
   outputs =
     {
-      # nixpkgs,
-      nixpkgs-legacy,
+      nixpkgs,
+      # nixpkgs-legacy,
       flake-utils,
       ...
     }:
     flake-utils.lib.eachDefaultSystem (
       system:
       let
-        # pkgs = import nixpkgs { inherit system; };
-        pkgs = import nixpkgs-legacy { inherit system; };
+        pkgs = import nixpkgs { inherit system; };
+        # pkgs = import nixpkgs-legacy { inherit system; };
       in
       # pkgs =pkgs;
       #pkgs = pkgs;
