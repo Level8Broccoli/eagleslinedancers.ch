@@ -1,5 +1,0 @@
-{% macro FormattierterText(params) %}
-<div class="content">
-    {{ params.content | markdownify | safe | replace("a href", "a target='_blank' href") }}
-</div>
-{% endmacro %}
